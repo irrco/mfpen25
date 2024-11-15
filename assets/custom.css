@@ -19,7 +19,7 @@
   min-width:400px;
 }
 
-.content-group #shopify-section-sidebar {
+.content-group #MainContent {
   display: block;
   flex-grow: 1;
   flex-shrink: 1;
