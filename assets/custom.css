@@ -16,6 +16,7 @@
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  min-width:400px;
 }
 
 .content-group #shopify-section-sidebar {
