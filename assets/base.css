@@ -3596,15 +3596,3 @@ details-disclosure > details {
   }
 }
 
-
-@media(min-width:767px){
-.menu-drawer {
-  transform: translate(100%);
-  left: unset;
-  right: 0;
-}
-
-.js details[open].menu-opening>.menu-drawer {
-  transform: translate(0);
-}
-}
