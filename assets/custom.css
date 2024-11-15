@@ -36,6 +36,9 @@
   position:fixed;
 }
 
+.sideBar_container .menu_btn {
+  display:none;
+}
 
 @media screen and (max-width: 749px) {
 .content-group #shopify-section-sidebar {
