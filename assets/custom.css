@@ -16,7 +16,7 @@
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  min-width:400px;
+  min-width:300px;
 }
 
 .content-group #MainContent {
@@ -33,7 +33,7 @@
 }
 
 .sideBar_container {
-  width:400px;
+  width:300px;
   position:fixed;
 }
 
