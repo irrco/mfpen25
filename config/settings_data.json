@@ -11,9 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/logo_150x_2x_b02c2293-beda-4883-a644-d6b395cbf569.webp",
     "logo_width": 300,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "helvetica_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "georgia_pro_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -142,9 +142,9 @@
           "sideBar_bg": "#ffffff",
           "sideBar_title": "Collection / Season Autumn /Winter 2024",
           "title_color": "#121212",
-          "title_hover": "#94F7E9",
+          "title_hover": "#94f7e9",
           "link_color": "#254145",
-          "link_hover": "#94F7E9"
+          "link_hover": "#94f7e9"
         }
       }
     },
