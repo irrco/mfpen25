@@ -141,10 +141,10 @@
           "sidebar_bottom_link_list": "",
           "sideBar_bg": "#ffffff",
           "sideBar_title": "<p><strong>Collection</strong> / Season <br/>Autumn /Winter 2024</p>",
-          "title_color": "#121212",
-          "title_hover": "#94f7e9",
-          "link_color": "#254145",
-          "link_hover": "#94f7e9"
+          "title_color": "#000000",
+          "title_hover": "#000000",
+          "link_color": "#000000",
+          "link_hover": "#000000"
         }
       }
     },
