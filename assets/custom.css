@@ -20,6 +20,7 @@
   align-self: auto;
   order: 0;
   min-width:var(--sidebar-width);
+  padding-left:var(--page-gutter);
 }
 
 .content-group #MainContent {
@@ -29,6 +30,7 @@
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  padding-right:var(--page-gutter);  
 }
 
 .menu-drawer-container {
