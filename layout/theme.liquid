@@ -308,11 +308,12 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
+    <div class="content-group">
     {% section 'sidebar' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-
+    </div>
     {% sections 'footer-group' %}
 
     <ul hidden>
