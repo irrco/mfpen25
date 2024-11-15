@@ -26,3 +26,26 @@
   align-self: auto;
   order: 0;
 }
+
+.menu-drawer-container {
+  
+}
+
+
+@media screen and (max-width: 749px) {
+.content-group #shopify-section-sidebar {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .medium-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .large-up-hide {
+    display: none !important;
+  }
+}
