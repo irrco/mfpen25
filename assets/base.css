@@ -3597,7 +3597,7 @@ details-disclosure > details {
 }
 
 
-@media(max-width:767px){
+@media(min-width:767px){
 #shopify-section-sections--18331178271001__header{
  z-index: 7 !important;
 }
