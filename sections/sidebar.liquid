@@ -1,6 +1,950 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<div class="sideBar_container">
+  <input type="checkbox" class="menu_btn" id="menu_toggle">
+ 
+    <label for="menu_toggle"  class="menu_icon">
+          <span class="menu"></span>
+    </label>
+ 
+  <div class="sideBar_overlay" id="sideBar_overlay">
+ 
+    <div class="sideBar" id="sideBar">
+ 
+      <h4 class="sideBar_title">{{section.settings.sideBar_title}}</h4>
+ 
+      <input type="checkbox" class="menu_btn" id="menu_toggle" checked>
+ 
+          <label for="menu_toggle"  class="inside_menu_icon menu_icon">
+ 
+                <span class="menu inside_menu"></span>
+ 
+          </label>
+ 
+      <div class="sideBar_inner">
+ 
+        <div class="top_menu">
+ 
+           {% assign link = linklists[section.settings.sidebar_top_link_list].link %}
+ 
+            <ul>   {% for link in linklists[section.settings.sidebar_top_link_list].links%}
+ 
+                <div class="link_details">
+ 
+                 <li><a class="link_title" href="{{ link.url }}">{{ link.title }}</a>
+ 
+                      {% assign child_list_handle = link.title | handleize %}
+ 
+                      {% assign child_list = linklists[child_list_handle] %}
+ 
+                        {% if child_list != blank %}
+ 
+                                {% assign child_link  = child_list.links %}
+ 
+                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} >
+ 
+                            <label for= {{ link.title }} class="dropDown_icon">
+ 
+                                  <span class="dropDown" ></span>
+ 
+                            </label>
+ 
+                                         {% for child_link in child_list.links %}
+ 
+                                  <ul class="dropDown_container">                                 
+ 
+                                       <li><a class="child_title" href="{{ child_link.url }}">{{ child_link.title }}</a></li>   
+ 
+ 
+ 
+                                    {% assign grandchild_list_handle = child_link.title | handleize %}
+ 
+                                        {% assign grandchild_list = linklists[grandchild_list_handle] %}
+ 
+                                          {% if grandchild_list != blank %}
+ 
+                                              {% assign grandchild_link  = grandchild_list.links %}
+ 
+                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} >
+ 
+                                              <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
+ 
+                                                    <span class="dropDown" ></span>
+ 
+                                              </label>
+ 
+                                                  {% for grandchild_link in grandchild_list.links %}
+ 
+                                                   <ul class="dropDown_container">                                
+ 
+                                                       <li><a class="grandchild_title" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>                             
+ 
+                                                      </ul>
+ 
+                                             {% endfor %}
+ 
+                                           {% endif %}
+ 
+                                    </ul>
+ 
+                           {% endfor %}
+ 
+                                    {% endif %}
+ 
+                   </li>
+ 
+                               </div>
+ 
+             {% endfor %}
+ 
+          </ul>
+ 
+        </div>
+ 
+              <div class="bottom_menu">
+ 
+           {% assign link = linklists[section.settings.sidebar_bottom_link_list].link %}
+ 
+            <ul>   {% for link in linklists[section.settings.sidebar_bottom_link_list].links%}
+ 
+<div class="link_details">
+ 
+                 <li><a class="link_title" href="{{ link.url }}">{{ link.title }}</a>
+ 
+                      {% assign child_list_handle = link.title | handleize %}
+ 
+ 
+ 
+                      {% assign child_list = linklists[child_list_handle] %}
+ 
+ 
+ 
+ 
+ 
+                        {% if child_list != blank %}
+ 
+                                {% assign child_link  = child_list.links %}
+ 
+ 
+ 
+                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} >
+ 
+ 
+ 
+                            <label for= {{ link.title }} class="dropDown_icon">
+ 
+ 
+ 
+                                  <span class="dropDown" ></span>
+ 
+ 
+ 
+                            </label>
+ 
+ 
+ 
+                                         {% for child_link in child_list.links %}
+ 
+                                  <ul class="dropDown_container">                                
+ 
+                                       <li><a class="child_title" href="{{ child_link.url }}">{{ child_link.title }}</a></li>   
+ 
+ 
+ 
+                                    {% assign grandchild_list_handle = child_link.title | handleize %}
+ 
+                                        {% assign grandchild_list = linklists[grandchild_list_handle] %}
+ 
+                                          {% if grandchild_list != blank %}
+ 
+                                              {% assign grandchild_link  = grandchild_list.links %}
+ 
+                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} >
+ 
+                                              <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
+ 
+                                                    <span class="dropDown" ></span>
+ 
+                                              </label>
+ 
+                                                  {% for grandchild_link in grandchild_list.links %}
+ 
+                                                   <ul class="dropDown_container">                                
+ 
+                                                       <li><a class="grandchild_title" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>                             
+ 
+                                                      </ul>
+ 
+                                             {% endfor %}
+ 
+                                           {% endif %}
+ 
+                                    </ul>
+ 
+                           {% endfor %}
+ 
+                                                                 {% endif %}
+ 
+                   </li>
+ 
+ 
+ 
+ 
+ 
+                               </div>
+ 
+               {% endfor %}
+ 
+          </ul>
+ 
+        </div>
+ 
+          {%- assign socials = "Facebook Twitter Pinterest Instagram Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+ 
+         {%- if  settings.social_twitter_link != blank
+ 
+                or settings.social_facebook_link != blank
+ 
+                or settings.social_pinterest_link != blank
+ 
+                or settings.social_instagram_link != blank
+ 
+                or settings.social_tumblr_link != blank
+ 
+                or settings.social_snapchat_link != blank
+ 
+                or settings.social_youtube_link != blank
+ 
+                or settings.social_vimeo_link != blank
+ 
+                or request.page_type == 'article'
+ 
+                or request.page_type == 'blog'
+ 
+                -%}
+ 
+           {%- assign social_icons = true -%}
+ 
+             <ul class="social_icon">
+ 
+              {%- for social in socials -%}
+ 
+                {%- assign social_link = social | prepend: 'social_' | append: '_link' | downcase -%}
+ 
+                {%- assign icon_link = social | prepend: 'icon-' | downcase -%}
+ 
+                {%- if settings[social_link] != blank -%}
+ 
+                  <li class="social-icons__item">
+ 
+                    <a class="social-icons__link" href="{{ settings[social_link] | escape }}">
+ 
+                      {%- include icon_link -%}
+ 
+                      <span class="icon_-text">{{ social }}</span>
+ 
+                    </a>
+ 
+                  </li>
+ 
+               {%- endif -%}
+ 
+               {% endfor %}
+ 
+          </ul>
+
+               {%- endif -%}
+ 
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+ 
+  /*======== Menu Icon =========*/
+ 
+  /* hide the input checkbox */
+ 
+  .menu_btn {
+ 
+    display: none;
+ 
   }
+ 
+  .menu_icon {
+ 
+    height: 50px;
+ 
+    width: 50px;
+ 
+    background-color: rgba(0,0,0,0.2);
+ 
+    position: relative;
+ 
+    margin: 20px 30px;                                         /* adjust placement as needed */
+ 
+    cursor: pointer;
+ 
+    z-index: 9;
+ 
+    }
+ 
+  .menu_icon:hover {
+ 
+    background-color: {{section.settings.sideBar_bg}};
+ 
+  }
+ 
+  .menu {
+ 
+    top: 50%;
+ 
+    left: 50%;
+ 
+    transform: translate(-50%, -50%);
+ 
+   }
+ 
+  /* need to mention content */
+ 
+  .menu, .menu::before, .menu::after {
+ 
+    content:'';
+ 
+    height: 5px;
+ 
+    width: 30px;
+ 
+    position: absolute;
+ 
+    transform-origin: center;
+ 
+    background-color: {{section.settings.link_color}};
+ 
+   }
+ 
+  .menu::before {
+ 
+              top: -10px;  
+ 
+   }
+ 
+ .menu::after {
+ 
+              bottom: -10px;
+ 
+   }
+ 
+  /* have to name the children .menu_icon to display since span is a grandchild */
+ 
+  .menu_btn:checked ~ .menu_icon .menu {
+ 
+    background: transparent;
+ 
+  }
+ 
+ 
+  .menu_btn:checked ~ .menu_icon .menu::before {
+ 
+    transform: rotate(45deg);
+ 
+    top: 0;
+ 
+    position: absolute;
+ 
+  }
+ 
+  .menu_btn:checked ~ .menu_icon .menu::after {
+ 
+    transform: rotate(-45deg);
+ 
+    top: 0;
+ 
+    position: absolute;
+ 
+    z-index: 1;
+ 
+  }
+ 
+ 
+  /* menu btn function */
+ 
+   .menu_btn:checked ~ .sideBar_overlay {
+ 
+     visibility: visible;
+ 
+ }
+ 
+   .menu_btn:checked ~ .sideBar_overlay .sideBar {
+ 
+     width: 400px;
+ 
+  }
+ 
+   /*======== SideBar =========*/
+ 
+  .inside_menu_icon {
+ 
+           margin-top: 7px;
+ 
+    margin-left: 7px !important;
+ 
+    position: relative;
+ 
+  }
+ 
+ 
+ 
+   .sideBar_overlay {
+ 
+    visibility: hidden;
+ 
+    width: 100%;
+ 
+    height: 100%;
+ 
+    margin: 0;
+ 
+    top: 0;
+ 
+    position: fixed;
+ 
+    background-color: rgba(0,0,0,0.7);
+ 
+    z-index: 11;
+ 
+  }
+ 
+ 
+ 
+  .sideBar {
+ 
+    width: 0;
+ 
+    height: 100%;
+ 
+    top: 0;
+ 
+    position: fixed;
+ 
+    background-color: {{section.settings.sideBar_bg}};
+ 
+    overflow: scroll;
+ 
+    position: relative;
+ 
+    display: flex;
+ 
+    flex-direction: column;
+ 
+    transition: all .3s ease;
+ 
+  }
+ 
+ 
+ 
+  .sideBar_title {
+ 
+    height: 10%;
+ 
+    width: 70%;
+ 
+    position: absolute;
+ 
+    left: 50%;
+ 
+    transform: translate( -50%, 10%);
+ 
+    color: {{section.settings.title_color}};
+ 
+    font-size: 25px;                                                                  /* edit font-size */
+ 
+    text-align: center;
+ 
+  }
+ 
+ 
+ 
+  .sideBar_title:hover {
+ 
+    color: {{section.settings.title_hover}};
+ 
+  }
+ 
+ 
+ 
+  .sideBar_inner {
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    position: absolute;
+ 
+    top: 5%;
+ 
+    left: 50%;
+ 
+    transform: translate(-50%, 0);
+ 
+    padding: 10%;
+ 
+   }
+ 
+ 
+ 
+  .top_menu, .bottom_menu {
+ 
+    margin-bottom: 20px;
+ 
+  }
+ 
+ /*======== Link List =========*/
+ 
+  .link_title {
+ 
+    color: {{section.settings.link_color}};
+ 
+    font-size: 18px;
+ 
+    text-align: center;
+ 
+    position: relative;
+ 
+    display: flex;
+ 
+  }
+ 
+ 
+  .link_title:hover  {
+ 
+    color: {{section.settings.link_hover}} !important;
+ 
+  }
+ 
+ 
+ 
+  .link_details {
+ 
+     list-style: none;
+ 
+  }
+ 
+ 
+ /*======== Drop down =========*/
+ 
+  /* if link has submenu then dropdown shows*/
+ 
+ .dropDown_btn {
+ 
+    display: none;
+ 
+    width: 0;
+ 
+    height: 0;
+ 
+    top: 0;
+ 
+  }
+ 
+ 
+  .dropDown_icon {
+ 
+    height: 25px;
+ 
+    width: 30%;
+ 
+    position: relative;
+ 
+    float: right;
+ 
+    margin: -25px; 
+ 
+   }
+ 
+ 
+ 
+.gCdropDown_icon {
+ 
+    left: -5px;
+ 
+  }
+ 
+ 
+ 
+  .dropDown, .dropDown::after {
+ 
+    content: '';
+ 
+    height: 3px;
+ 
+    width: 15px;
+ 
+    background-color: {{section.settings.link_color}};
+ 
+    position: absolute;  
+ 
+    top: 50%;
+ 
+    left: 50%;
+ 
+    transform: translate(-50%, -50%);
+  }
+ 
+ 
+ 
+  .dropDown::after {
+ 
+    transform: rotate(90deg);
+ 
+    visibility: visible;
+ 
+    top: 0;
+ 
+    left: 0;
+ 
+ }
+ 
+  .dropDown_btn:checked ~ .dropDown_icon .dropDown::after {
+ 
+    visibility: hidden;
+ 
+  }
+ 
+ 
+ 
+  .dropDown_btn:checked ~ .dropDown_container {
+ 
+    display: block;
+ 
+    transition: all .3s ease;
+ 
+  }
+ 
+ 
+ 
+  .dropDown_container {
+ 
+    display: none;
+ 
+    margin-left: 10%;
+ 
+    font-size: 16px;
+ 
+    list-style: none;
+ 
+    color: {{section.settings.link_color}}!important;
+ 
+  }
+ 
+ 
+ 
+  .dropDown_container:hover {
+ 
+    background-color: {{section.settings.link_hover}} !important;
+ 
+  }
+ 
+ 
+ 
+  .child_title {
+ 
+    color: {{section.settings.link_color}}!important;
+ 
+  }
+ 
+ 
+   /*======== Socials =========*/
+ 
+  /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
+ 
+ .social_icons {
+ 
+    height: 50px;
+ 
+    width: 100%;
+ 
+    bottom: 0;
+ 
+    position: absolute;
+ 
+  }
+ 
+ 
+ 
+  .social-icons__item {
+ 
+    font-size: 20px;
+ 
+  }
+ 
+ 
+ 
+  .icon_-text {
+ 
+     margin-left: 10px;
+ 
+  }
+ 
+ 
+ 
+  .social-icons__item:hover {
+ 
+    background-color: {{section.settings.link_hover}} !important;
+ 
+  }
+ 
+  </style>
+ 
+ 
+{% schema %}
+ 
+{
+ 
+  "name": {
+ 
+    "cs": "Nabídka v postranní liště",
+ 
+    "da": "Sidebjælkemenu",
+ 
+    "de": "Seitenleistenmenü",
+ 
+    "en": "Sidebar menu",
+ 
+    "es": "Menú de la barra lateral",
+ 
+    "fi": "Sivupalkkivalikko",
+ 
+    "fr": "Menu de la barre latérale",
+ 
+    "it": "Menu sidebar",
+ 
+    "ja": "サイドバーメニュー",
+ 
+    "ko": "사이드바 메뉴",
+ 
+    "nb": "Sidepanelmeny",
+ 
+    "nl": "Zijbalkmenu",
+ 
+    "pl": "Menu paska bocznego",
+ 
+    "pt-BR": "Menu lateral",
+ 
+    "pt-PT": "Menu lateral",
+ 
+    "sv": "Sidomeny",
+ 
+    "th": "เมนูแถบด้านข้าง",
+ 
+    "tr": "Yan çubuk menüsü",
+ 
+    "vi": "Menu thanh bên",
+ 
+    "zh-CN": "侧边栏菜单",
+ 
+    "zh-TW": "側邊欄選單"
+ 
+  },
+ 
+ 
+ 
+  "class": "sidebar-menu-section",
+ 
+  "settings": [
+ 
+    {
+ 
+      "type": "link_list",
+ 
+      "id": "sidebar_top_link_list",
+ 
+      "label": {
+ 
+        "cs": "Primární nabídka",
+ 
+        "da": "Primær menu",
+ 
+        "de": "Hauptmenü",
+ 
+        "en": "Primary menu",
+ 
+        "es": "Menú primario",
+ 
+        "fi": "Ensisijainen valikko",
+ 
+        "fr": "Menu principal",
+ 
+        "it": "Menu principale",
+ 
+        "ja": "プライマリメニュー",
+ 
+        "ko": "기본 메뉴",
+ 
+        "nb": "Primærmeny",
+ 
+        "nl": "Eerste menu",
+ 
+        "pl": "Główne menu",
+ 
+        "pt-BR": "Menu principal",
+ 
+        "pt-PT": "Menu primário",
+ 
+        "sv": "Primärmeny",
+ 
+        "th": "เมนูหลัก",
+ 
+        "tr": "Birincil menü",
+ 
+        "vi": "Menu chính",
+ 
+        "zh-CN": "主菜单",
+ 
+        "zh-TW": "主要選單"
+ 
+      },
+ 
+      "default": "main-menu"
+ 
+    },
+ 
+    {
+ 
+      "type": "link_list",
+ 
+      "id": "sidebar_bottom_link_list",
+ 
+      "label": {
+ 
+        "cs": "Vedlejší nabídka",
+ 
+        "da": "Ekstra menu",
+ 
+        "de": "Zusatzmenü",
+ 
+        "en": "Additional menu",
+ 
+        "es": "Menú adicional",
+ 
+        "fi": "Lisävalikko",
+ 
+        "fr": "Menu supplémentaire",
+ 
+        "it": "Menu aggiuntivo",
+ 
+        "ja": "追加メニュー",
+ 
+        "ko": "추가 메뉴",
+ 
+        "nb": "Tilleggsmeny",
+ 
+        "nl": "Extra menu",
+ 
+        "pl": "Dodatkowe menu",
+ 
+        "pt-BR": "Menu adicional",
+ 
+        "pt-PT": "Menu adicional",
+ 
+        "sv": "Ytterligare meny",
+ 
+        "th": "เมนูเพิ่มเติม",
+ 
+        "tr": "Ek menü",
+ 
+        "vi": "Menu bổ sung",
+ 
+        "zh-CN": "其他菜单",
+ 
+        "zh-TW": "附加選單"
+ 
+      },
+ 
+      "default": "footer"
+ 
+    },
+ 
+      {
+ 
+        "type": "color",
+ 
+        "id": "sideBar_bg",
+ 
+        "label": "Sidebar Background Color",
+ 
+        "default": "#87ceeb"
+ 
+        },
+ 
+     {
+ 
+        "type": "text",
+ 
+        "id": "sideBar_title",
+ 
+        "label": {
+ 
+        "en": "Sidebar Title"
+ 
+        },
+ 
+        "default": {
+ 
+        "en": "Custom Sidebar"
+ 
+        }
+ 
+        },
+ 
+        {
+ 
+        "type": "color",
+ 
+        "id": "title_color",
+ 
+        "label": "Title Font Color",
+ 
+        "default": "#254145"
+ 
+        },
+ 
+        {
+ 
+        "type": "color",
+ 
+        "id": "title_hover",
+ 
+        "label": "Title Hover Color",
+ 
+        "default": "#94F7E9"
+ 
+        },
+ 
+       {
+ 
+       "type": "color",
+ 
+        "id": "link_color",
+ 
+        "label": "Link Font Color",
+ 
+        "default": "#254145"
+ 
+        },
+ 
+        {
+ 
+        "type": "color",
+ 
+        "id": "link_hover",
+ 
+        "label": "Link Hover Color",
+ 
+        "default": "#94F7E9"
+ 
+        }
+ 
+  ]
+ 
+}
+ 
 {% endschema %}
