@@ -1,4 +1,7 @@
-
+:root {
+  --sidebar-width: 340px;
+  --page-gutter: 36px;
+}
 
 .content-group {
   display: flex;
@@ -16,7 +19,7 @@
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  min-width:300px;
+  min-width:var(--sidebar-width);
 }
 
 .content-group #MainContent {
@@ -33,7 +36,7 @@
 }
 
 .sideBar_container {
-  width:300px;
+  width:var(--sidebar-width);
   position:fixed;
 }
 
