@@ -306,7 +306,7 @@
  }
  
    .menu_btn:checked ~ .sideBar_overlay .sideBar {
-     width: 400px;
+     width: var(--sidebar-width);
   }
  
    /*======== SideBar =========*/
@@ -330,18 +330,10 @@
  
  /*======== Link List =========*/
  
-  .link_title {
- 
-    color: {{section.settings.link_color}};
- 
-    font-size: 18px;
- 
-    text-align: center;
- 
-    position: relative;
- 
-    display: flex;
- 
+  .link_title { 
+    color: {{section.settings.link_color}}; 
+    position: relative; 
+    display: flex; 
   }
  
  
@@ -366,29 +358,20 @@
  
  .dropDown_btn {
  
-    display: none;
- 
-    width: 0;
- 
-    height: 0;
- 
-    top: 0;
- 
+    display: none; 
+    width: 0; 
+    height: 0; 
+    top: 0; 
   }
  
  
   .dropDown_icon {
  
     height: 25px;
- 
-    width: 30%;
- 
-    position: relative;
- 
-    float: right;
- 
-    margin: -25px; 
- 
+    width: 30%; 
+    position: relative; 
+    float: right; 
+    margin: -25px;  
    }
  
  
