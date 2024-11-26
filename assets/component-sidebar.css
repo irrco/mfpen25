@@ -122,8 +122,7 @@
  
   /* if link has submenu then dropdown shows*/
  
- .dropDown_btn {
- 
+ .dropDown_btn { 
     display: none; 
     width: 0; 
     height: 0; 
@@ -142,93 +141,63 @@
  
  
  
-.gCdropDown_icon {
- 
-    left: -5px;
- 
+.gCdropDown_icon { 
+    left: -5px; 
   }
  
  
  
-  .dropDown, .dropDown::after {
- 
-    content: '';
- 
-    height: 3px;
- 
-    width: 15px;
- 
-    background-color: {{section.settings.link_color}};
- 
-    position: absolute;  
- 
-    top: 50%;
- 
-    left: 50%;
- 
+  .dropDown, .dropDown::after { 
+    content: ''; 
+    height: 3px; 
+    width: 15px; 
+    background-color: {{section.settings.link_color}}; 
+    position: absolute;   
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
   }
  
  
  
-  .dropDown::after {
- 
-    transform: rotate(90deg);
- 
+  .dropDown::after { 
+    transform: rotate(90deg); 
     visibility: visible;
- 
     top: 0;
- 
-    left: 0;
- 
+    left: 0; 
  }
  
-  .dropDown_btn:checked ~ .dropDown_icon .dropDown::after {
- 
-    visibility: hidden;
- 
+  .dropDown_btn:checked ~ .dropDown_icon .dropDown::after { 
+    visibility: hidden; 
   }
  
  
  
-  .dropDown_btn:checked ~ .dropDown_container {
- 
-    display: block;
- 
-    transition: all .3s ease;
- 
+  .dropDown_btn:checked ~ .dropDown_container { 
+    display: block; 
+    transition: all .3s ease; 
   }
  
  
  
-  .dropDown_container {
- 
+  .dropDown_container { 
     display: none;
- 
-    margin-left: 10%;
- 
-    font-size: 16px;
- 
-    list-style: none;
- 
-    color: {{section.settings.link_color}}!important;
- 
+    margin-left: 10%; 
+    font-size: 16px; 
+    list-style: none; 
+    color: {{section.settings.link_color}}!important; 
   }
  
  
  
-  .dropDown_container:hover {
- 
-    background-color: {{section.settings.link_hover}} !important;
- 
+  .dropDown_container:hover { 
+    background-color: {{section.settings.link_hover}} !important; 
   }
  
  
  
   .child_title {
- 
-    color: {{section.settings.link_color}}!important;
- 
+    color: {{section.settings.link_color}}!important; 
   }
  
  
@@ -236,42 +205,30 @@
  
   /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
  
- .social_icons {
- 
-    height: 50px;
- 
-    width: 100%;
- 
-    bottom: 0;
- 
-    position: absolute;
- 
+ .social_icons { 
+    height: 50px; 
+    width: 100%; 
+    bottom: 0; 
+    position: absolute; 
   }
  
  
  
-  .social-icons__item {
- 
+  .social-icons__item { 
     font-size: 20px;
- 
   }
  
  
  
   .icon_-text {
- 
-     margin-left: 10px;
- 
+     margin-left: 10px; 
   }
  
  
  
   .social-icons__item:hover {
- 
     background-color: {{section.settings.link_hover}} !important;
- 
   }
  
-  </style>
  
  
