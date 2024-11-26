@@ -1,0 +1,277 @@
+  /*======== Menu Icon =========*/
+ 
+  /* hide the input checkbox */
+ 
+  .menu_btn { 
+    display: none; 
+  } 
+  .menu_icon { 
+    height: 50px; 
+    width: 50px; 
+    background-color: rgba(0,0,0,0.2);
+    position: relative; 
+    margin: 20px 30px;                                         /* adjust placement as needed */ 
+    cursor: pointer; 
+    z-index: 9; 
+    }
+ 
+  .menu_icon:hover { 
+    background-color: {{section.settings.sideBar_bg}}; 
+  }
+ 
+  .menu { 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+   }
+ 
+  /* need to mention content */
+ 
+  .menu, .menu::before, .menu::after { 
+    content:''; 
+    height: 5px; 
+    width: 30px; 
+    position: absolute; 
+    transform-origin: center; 
+    background-color: {{section.settings.link_color}}; 
+   }
+ 
+  .menu::before { 
+              top: -10px;   
+   }
+ 
+ .menu::after { 
+              bottom: -10px; 
+   }
+ 
+  /* have to name the children .menu_icon to display since span is a grandchild */
+ 
+  .menu_btn:checked ~ .menu_icon .menu { 
+    background: transparent; 
+  }
+ 
+ 
+  .menu_btn:checked ~ .menu_icon .menu::before { 
+    transform: rotate(45deg); 
+    top: 0; 
+    position: absolute; 
+  }
+ 
+  .menu_btn:checked ~ .menu_icon .menu::after { 
+    transform: rotate(-45deg); 
+    top: 0; 
+    position: absolute; 
+    z-index: 1; 
+  }
+ 
+ 
+  /* menu btn function */
+ 
+   .menu_btn:checked ~ .sideBar_overlay { 
+     visibility: visible; 
+ }
+ 
+   .menu_btn:checked ~ .sideBar_overlay .sideBar {
+     width: var(--sidebar-width);
+  }
+ 
+   /*======== SideBar =========*/
+ 
+  .inside_menu_icon { 
+    margin-top: 7px; 
+    margin-left: 7px !important; 
+    position: relative; 
+  }
+
+  .sideBar_title { 
+  }
+ 
+  .sideBar_title:hover { 
+    color: {{section.settings.title_hover}}; 
+  }
+ 
+  .top_menu, .bottom_menu { 
+    margin-bottom: 20px; 
+  }
+ 
+ /*======== Link List =========*/
+ 
+  .link_title { 
+    color: {{section.settings.link_color}}; 
+    position: relative; 
+    display: flex; 
+  }
+ 
+ 
+  .link_title:hover  {
+ 
+    color: {{section.settings.link_hover}} !important;
+ 
+  }
+ 
+ 
+ 
+  .link_details {
+ 
+     list-style: none;
+ 
+  }
+ 
+ 
+ /*======== Drop down =========*/
+ 
+  /* if link has submenu then dropdown shows*/
+ 
+ .dropDown_btn {
+ 
+    display: none; 
+    width: 0; 
+    height: 0; 
+    top: 0; 
+  }
+ 
+ 
+  .dropDown_icon {
+ 
+    height: 25px;
+    width: 30%; 
+    position: relative; 
+    float: right; 
+    margin: -25px;  
+   }
+ 
+ 
+ 
+.gCdropDown_icon {
+ 
+    left: -5px;
+ 
+  }
+ 
+ 
+ 
+  .dropDown, .dropDown::after {
+ 
+    content: '';
+ 
+    height: 3px;
+ 
+    width: 15px;
+ 
+    background-color: {{section.settings.link_color}};
+ 
+    position: absolute;  
+ 
+    top: 50%;
+ 
+    left: 50%;
+ 
+    transform: translate(-50%, -50%);
+  }
+ 
+ 
+ 
+  .dropDown::after {
+ 
+    transform: rotate(90deg);
+ 
+    visibility: visible;
+ 
+    top: 0;
+ 
+    left: 0;
+ 
+ }
+ 
+  .dropDown_btn:checked ~ .dropDown_icon .dropDown::after {
+ 
+    visibility: hidden;
+ 
+  }
+ 
+ 
+ 
+  .dropDown_btn:checked ~ .dropDown_container {
+ 
+    display: block;
+ 
+    transition: all .3s ease;
+ 
+  }
+ 
+ 
+ 
+  .dropDown_container {
+ 
+    display: none;
+ 
+    margin-left: 10%;
+ 
+    font-size: 16px;
+ 
+    list-style: none;
+ 
+    color: {{section.settings.link_color}}!important;
+ 
+  }
+ 
+ 
+ 
+  .dropDown_container:hover {
+ 
+    background-color: {{section.settings.link_hover}} !important;
+ 
+  }
+ 
+ 
+ 
+  .child_title {
+ 
+    color: {{section.settings.link_color}}!important;
+ 
+  }
+ 
+ 
+   /*======== Socials =========*/
+ 
+  /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
+ 
+ .social_icons {
+ 
+    height: 50px;
+ 
+    width: 100%;
+ 
+    bottom: 0;
+ 
+    position: absolute;
+ 
+  }
+ 
+ 
+ 
+  .social-icons__item {
+ 
+    font-size: 20px;
+ 
+  }
+ 
+ 
+ 
+  .icon_-text {
+ 
+     margin-left: 10px;
+ 
+  }
+ 
+ 
+ 
+  .social-icons__item:hover {
+ 
+    background-color: {{section.settings.link_hover}} !important;
+ 
+  }
+ 
+  </style>
+ 
+ 
