@@ -86,3 +86,6 @@
   width:10rem;
 justify-content: flex-end
 }
+.header__icon:not(.header__icon--summary), .header__icon span {
+    justify-content: flex-end;
+}
