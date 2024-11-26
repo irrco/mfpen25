@@ -82,3 +82,6 @@
   text-decoration:none;
 }
 
+.header__icon, .header__icon--cart .icon {
+  width:10rem;
+}
