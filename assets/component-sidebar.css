@@ -110,7 +110,8 @@
     text-decoration:none;
   }
  
- 
+   .link_title:visited,
+  .link_title:active,
   .link_title:hover  {
  
   color: rgb(var(--color-foreground));
