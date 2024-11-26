@@ -15,7 +15,8 @@
       <div class="sideBar_inner"> 
         <div class="top_menu"> 
            {% assign link = linklists[section.settings.sidebar_top_link_list].link %} 
-            <ul>   {% for link in linklists[section.settings.sidebar_top_link_list].links%} 
+            <ul>   
+              {% for link in linklists[section.settings.sidebar_top_link_list].links%} 
                 <div class="link_details"> 
                  <li><a class="link_title" href="{{ link.url }}">{{ link.title }}</a> 
                       {% assign child_list_handle = link.title | handleize %} 
@@ -26,82 +27,42 @@
                             <label for= {{ link.title }} class="dropDown_icon"> 
                                   <span class="dropDown" ></span> 
                             </label> 
-                                         {% for child_link in child_list.links %} 
+                          {% for child_link in child_list.links %} 
                                   <ul class="dropDown_container">                                  
                                        <li><a class="child_title" href="{{ child_link.url }}">{{ child_link.title }}</a></li>    
-                                    {% assign grandchild_list_handle = child_link.title | handleize %}
- 
-                                        {% assign grandchild_list = linklists[grandchild_list_handle] %}
- 
-                                          {% if grandchild_list != blank %}
- 
-                                              {% assign grandchild_link  = grandchild_list.links %}
- 
-                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} >
- 
-                                              <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
- 
-                                                    <span class="dropDown" ></span>
- 
-                                              </label> 
-                                                  {% for grandchild_link in grandchild_list.links %}
- 
-                                                   <ul class="dropDown_container">                                
- 
-                                                       <li><a class="grandchild_title" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>                             
- 
-                                                      </ul>
- 
-                                             {% endfor %}
- 
-                                           {% endif %}
- 
+                                    {% assign grandchild_list_handle = child_link.title | handleize %} 
+                                        {% assign grandchild_list = linklists[grandchild_list_handle] %} 
+                                          {% if grandchild_list != blank %} 
+                                            {% assign grandchild_link  = grandchild_list.links %} 
+                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} /> 
+                                            <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
+                                                  <span class="dropDown" ></span> 
+                                            </label> 
+                                            {% for grandchild_link in grandchild_list.links %}
+                                             <ul class="dropDown_container">                                
+                                                 <li><a class="grandchild_title" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>                             
+                                             </ul>
+                                            {% endfor %}
+                                          {% endif %}
                                     </ul>
- 
                            {% endfor %}
- 
-                                    {% endif %}
- 
+                          {% endif %}
                    </li>
- 
-                               </div>
- 
-             {% endfor %}
- 
-          </ul>
- 
-        </div>
- 
-              <div class="bottom_menu">
- 
-           {% assign link = linklists[section.settings.sidebar_bottom_link_list].link %}
- 
-            <ul>   {% for link in linklists[section.settings.sidebar_bottom_link_list].links%}
- 
-<div class="link_details">
- 
-                 <li><a class="link_title" href="{{ link.url }}">{{ link.title }}</a>
- 
+              </div> 
+             {% endfor %} 
+          </ul> 
+        </div> 
+        <div class="bottom_menu">
+           {% assign link = linklists[section.settings.sidebar_bottom_link_list].link %} 
+            <ul>   
+              {% for link in linklists[section.settings.sidebar_bottom_link_list].links%} 
+              <div class="link_details">
+                 <li><a class="link_title" href="{{ link.url }}">{{ link.title }}</a> 
                       {% assign child_list_handle = link.title | handleize %}
- 
- 
- 
                       {% assign child_list = linklists[child_list_handle] %}
- 
- 
- 
- 
- 
                         {% if child_list != blank %}
- 
-                                {% assign child_link  = child_list.links %}
- 
- 
- 
+                          {% assign child_link  = child_list.links %}
                           <input type="checkbox" class="dropDown_btn" id= {{ link.title }} >
- 
- 
- 
                             <label for= {{ link.title }} class="dropDown_icon">
  
  
