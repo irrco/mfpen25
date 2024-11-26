@@ -97,10 +97,16 @@
  /*======== Link List =========*/
  
   .link_title { 
+  font-family: var(--font-heading-family);
+  }
+
+ .link_title,
+  .child_title,
+  .grandchild_title {
   color: rgb(var(--color-foreground));
     position: relative; 
     display: flex; 
-  font-family: var(--font-heading-family);
+
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -112,13 +118,15 @@
  
    .link_title:visited,
   .link_title:active,
-  .link_title:hover  {
- 
-  color: rgb(var(--color-foreground));
- 
+  .link_title:hover  { 
+    color: rgb(var(--color-foreground));
   }
+
  
- 
+  .child_title,
+  .grandchild_title {
+    
+  }
  
   .link_details {
  
@@ -203,12 +211,7 @@
   .dropDown_container:hover { 
     background-color: {{section.settings.link_hover}} !important; 
   }
- 
- 
- 
-  .child_title {
-  }
- 
+
  
    /*======== Socials =========*/
  
