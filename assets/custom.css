@@ -84,4 +84,5 @@
 
 .header__icon, .header__icon--cart .icon {
   width:10rem;
+justify-content: flex-end
 }
