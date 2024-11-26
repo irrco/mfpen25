@@ -262,7 +262,7 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="{%  if section.settings.enable_cart-icon %}header__icon header__icon--cart {% endif %}link focus-inset" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%  if section.settings.enable_cart-icon %}
           {% if cart == empty %}
             <span class="svg-wrapper">{{'icon-cart-empty.svg' | inline_asset_content }}</span>
@@ -274,7 +274,7 @@
           <span class="">{{ 'templates.cart.cart' | t }}:/</span>          
         {%  endif %}
 
-          <div class="inline">
+          <div class="">
             {%- if cart.item_count < 100 -%}
               <span aria-hidden="true">{{ cart.item_count }}</span>
             {%- endif -%}
