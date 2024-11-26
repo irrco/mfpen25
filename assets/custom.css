@@ -73,3 +73,7 @@
   padding: inherit 0;
 }
 
+.header__icon--cart {
+  margin:0;
+}
+
