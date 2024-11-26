@@ -191,10 +191,13 @@
  
   .dropDown_container { 
     display: none;
-
     list-style: numbers; 
   }
- 
+  .dropDown_container > 
+  .dropDown_container { 
+    display: none;
+    list-style: dotted; 
+  } 
  
  
   .dropDown_container:hover { 
