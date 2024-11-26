@@ -1,5 +1,5 @@
 
-.sideBar_inner ul {
+.sideBar_inner > top_menu > ul {
   padding:0;
   margin:0;
 }
