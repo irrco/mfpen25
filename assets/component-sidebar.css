@@ -191,7 +191,7 @@
     display: none;
     width: auto;
     margin-right: .5rem;
- 
+}
   .dropDown_btn:checked ~ .dropDown_container { 
     display: block; 
     transition: all .3s ease; 
