@@ -30,7 +30,7 @@
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  padding-right:var(--page-gutter);  
+  padding-right:calc(var(--sidebar-width) + var(--page-gutter));  
 }
 
 .menu-drawer-container {
