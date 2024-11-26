@@ -200,6 +200,7 @@
     display: none;
     list-style: none; 
     line-height:0.8rem;
+    height:1.6rem;
   }
   .dropDown_container .dropDown_container { 
     display: none;
