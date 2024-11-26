@@ -202,7 +202,7 @@
   }
   .dropDown_container .dropDown_container { 
     display: none;
-    list-style: bullets;
+    list-style-type: disc;
   } 
  
  
