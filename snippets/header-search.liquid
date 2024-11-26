@@ -6,8 +6,12 @@
 
   Usage:
   {% render 'header-search', input_id: 'My-Id'%}
+
+  Hack:
+  set the var to change between icon and text 
 {% endcomment %}
 
+{% assign search-mode = 'text' %}
 <details-modal class="header__search">
   <details>
     <summary
@@ -17,7 +21,11 @@
     >
       <span>
         <span class="svg-wrapper">
-          Search
+          {% if search-mode == 'text' %}
+          {{ 'general.search.search' | t }}
+          {% else %}
+          {{- 'icon-search.svg' | inline_asset_content -}}
+          {% endif %}
         </span>
         <span class="svg-wrapper header__icon-close">
           {{- 'icon-close.svg' | inline_asset_content -}}
