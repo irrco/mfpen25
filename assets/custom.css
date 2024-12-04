@@ -117,6 +117,9 @@ background: transparent;
     .product--large:not(.product--no-media) .product__info-wrapper {
         margin-top:8rem;
     }
+  .product__media {
+    height:100vh;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -125,3 +128,5 @@ background: transparent;
         width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
     }
 }
+
+
