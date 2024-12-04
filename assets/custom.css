@@ -41,6 +41,7 @@
 .sideBar_container {
   width:var(--sidebar-width);
   position:fixed;
+  margin-top: 8rem;
 }
 
 .sideBar_container label.menu_icon,
