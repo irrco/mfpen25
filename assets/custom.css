@@ -112,3 +112,10 @@ background: transparent;
         z-index: 2;
     }
 }
+
+@media screen and (min-width: 990px) {
+    .product--large:not(.product--no-media) .product__media-wrapper {
+        max-width: 45% !important;
+        width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+}
