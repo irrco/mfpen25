@@ -113,6 +113,12 @@ background: transparent;
     }
 }
 
+@media screen and (min-width: 750px) {
+    .product--large:not(.product--no-media) .product__info-wrapper {
+        margin-top:8rem;
+    }
+}
+
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
         max-width: 45% !important;
