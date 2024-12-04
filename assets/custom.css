@@ -89,3 +89,13 @@ justify-content: flex-end
 .header__icon:not(.header__icon--summary), .header__icon span {
     justify-content: flex-end;
 }
+
+
+sticky-header {
+background: transparent;
+}
+
+.header__icons {
+  right: 30px;
+    position: fixed;
+}
