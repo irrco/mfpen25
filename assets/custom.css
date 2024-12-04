@@ -94,6 +94,9 @@ justify-content: flex-end
 sticky-header {
 background: transparent;
 }
+.header-wrapper {
+  position:fixed;
+}
 
 .header__icons {
   right: 30px;
