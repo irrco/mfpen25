@@ -1,8 +1,8 @@
 :root {
   --sidebar-width: 304px; 
   --page-gutter: 36px;
+  overscroll-behavior: none;
 }
-
 .content-group {
   display: flex;
   flex-direction: row;
