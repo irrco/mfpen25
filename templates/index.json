@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "custom_liquid_yMLBiJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -72,6 +81,7 @@
     }
   },
   "order": [
+    "custom_liquid_yMLBiJ",
     "image_banner",
     "multicolumn"
   ]
