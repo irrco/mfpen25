@@ -133,6 +133,7 @@ background: transparent;
     .main-page-title {
         margin-bottom: 0rem !important;
       text-transform:uppercase;
+      font-weight:bold;
     }
 
 @media screen and (min-width: 750px) {
