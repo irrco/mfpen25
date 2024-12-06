@@ -92,6 +92,11 @@
   .sideBar_title { 
     font-size:inherit;
   }
+
+.sideBar_title p strong {
+  font-weight:bold;
+  text-transform:uppercase
+}
  
   .sideBar_title:hover { 
     color: {{section.settings.title_hover}}; 
