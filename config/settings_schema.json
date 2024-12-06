@@ -139,8 +139,8 @@
       {
         "type": "range",
         "id": "body_scale",
-        "min": 100,
-        "max": 130,
+        "min": 10,
+        "max": 500,
         "step": 5,
         "unit": "%",
         "label": "t:settings_schema.typography.settings.body_scale.label",
