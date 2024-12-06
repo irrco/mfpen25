@@ -142,3 +142,6 @@ background: transparent;
     }
 }
 
+.product__title {
+  text-transform:uppercase
+}
