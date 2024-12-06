@@ -1,5 +1,5 @@
 
-.sideBar_inner > top_menu > ul {
+.top_menu_list {
   padding:0;
   margin:0;
 }
@@ -90,6 +90,7 @@
   }
 
   .sideBar_title { 
+    font-size:inherit;
   }
  
   .sideBar_title:hover { 
