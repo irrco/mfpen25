@@ -90,7 +90,7 @@ justify-content: flex-end
 }
 
 .header__icon--menu {
-  width:3rem;
+  width:5rem;
 }
 
 .header__icon:not(.header__icon--summary), .header__icon span {
