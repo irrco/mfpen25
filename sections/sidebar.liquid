@@ -26,8 +26,9 @@
                       {% assign child_list_handle = link.title | handleize %} 
                       {% assign child_list = linklists[child_list_handle] %} 
                         {% if child_list != blank %} 
-                          <script>console.log({{child_list}});</script>
+                          
                                 {% assign child_link  = child_list.links %} 
+                          <script>console.log({{ child_list.links }});</script>
                           <input type="checkbox" class="dropDown_btn" id= {{ link.title }} > 
                             <label for= {{ link.title }} class="dropDown_icon"> 
                                   <span class="dropDown" ></span> 
