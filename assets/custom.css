@@ -88,6 +88,11 @@
   width:10rem;
 justify-content: flex-end
 }
+
+.header__icon--menu {
+  width:3rem;
+}
+
 .header__icon:not(.header__icon--summary), .header__icon span {
     justify-content: flex-end;
 }
