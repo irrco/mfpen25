@@ -150,3 +150,8 @@ background: transparent;
 .product__title {
   text-transform:uppercase
 }
+
+
+#Banner-template--18255422783645__image_banner {
+  max-width:inherit;
+}
