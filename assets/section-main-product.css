@@ -241,7 +241,9 @@ a.product__text {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-
+.product__text p{
+  padding-left:2rem;
+}
 .product__text.subtitle {
   font-weight:bold;
   font-family: var(--font-heading-family);
@@ -249,6 +251,7 @@ a.product__text {
    line-height: inherit;
   letter-spacing: inherit;
   color: rgba(var(--color-foreground), 1);
+  padding-left:0px;
 }
 
 
