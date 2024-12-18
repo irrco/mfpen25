@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "custom_liquid_q3cAGx": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{{ product.metafields.custom.size_and_fit.value }}"
-          }
-        },
         "vendor": {
           "type": "text",
           "disabled": true,
@@ -38,23 +32,59 @@
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "disabled": true,
           "settings": {}
         },
+        "text_HbGi3n": {
+          "type": "text",
+          "settings": {
+            "text": "Product description:",
+            "text_style": "subtitle"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
         },
-        "custom_liquid_HhJ7H6": {
+        "text_jhECa6": {
+          "type": "text",
+          "settings": {
+            "text": "Size and fit:",
+            "text_style": "subtitle"
+          }
+        },
+        "custom_liquid_q3cAGx": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{{ product.metafields.custom.size_and_fit.value }}"
+          }
+        },
+        "text_DfG6U6": {
+          "type": "text",
+          "settings": {
+            "text": "Product Details",
+            "text_style": "subtitle"
+          }
+        },
+        "custom_liquid_HhJ7H6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.product_details.value }}"
+          }
+        },
+        "text_PELRWJ": {
+          "type": "text",
+          "settings": {
+            "text": "Styled with:",
+            "text_style": "subtitle"
+          }
+        },
+        "custom_liquid_FPbMzx": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.styled_with.value }}"
           }
         },
         "collapsible-row-0": {
@@ -77,32 +107,16 @@
             "page": ""
           }
         },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "disabled": true,
           "settings": {
             "share_label": "Share"
           }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -120,19 +134,22 @@
         }
       },
       "block_order": [
-        "custom_liquid_q3cAGx",
         "vendor",
         "title",
         "caption",
-        "price",
         "quantity_selector",
+        "text_HbGi3n",
         "description",
+        "text_jhECa6",
+        "custom_liquid_q3cAGx",
+        "text_DfG6U6",
         "custom_liquid_HhJ7H6",
+        "text_PELRWJ",
+        "custom_liquid_FPbMzx",
         "collapsible-row-0",
         "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
         "share",
+        "price",
         "variant_picker",
         "buy_buttons"
       ],
