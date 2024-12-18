@@ -241,7 +241,9 @@ a.product__text {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.product__text p{
+.product__text .product-single__description p,
+.product__text .metafield-plain_text_field p,
+.product__text .metafield-rich_text_field p{
   padding-left:2rem;
 }
 .product__text.subtitle {
