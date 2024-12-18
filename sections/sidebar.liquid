@@ -22,7 +22,7 @@
               {% for link in linklists[section.settings.sidebar_top_link_list].links%} 
                 <div class="link_details"> 
                  <li>
-                   <a class="link_title {% if link.active %} active {% if link.child_active %} child-active {% endif %}{% endif %}" href="{{ link.url }}" >{{ link.title }}</a> 
+                   <a class="link_title {% if link.active %} active {% endif %} {% if link.child_active %} child-active {% endif %}" href="{{ link.url }}" >{{ link.title }}</a> 
                       {% assign child_list_handle = link.title | handleize %} 
                       {% assign child_list = linklists[child_list_handle] %} 
                         {% if child_list != blank %} 
@@ -34,7 +34,7 @@
                             </label> 
                           {% for child_link in child_list.links %} 
                                   <ul class="dropDown_container">                                  
-                                       <li><a class="child_title {% if link.active %} active {% if link.child_active %} child-active {% endif %}{% endif %}" href="{{ child_link.url }}">{{ child_link.title }}</a></li>    
+                                       <li><a class="child_title {% if link.active %} active {% endif %}{% if link.child_active %} child-active {% endif %}" href="{{ child_link.url }}">{{ child_link.title }}</a></li>    
                                     {% assign grandchild_list_handle = child_link.title | handleize %} 
                                         {% assign grandchild_list = linklists[grandchild_list_handle] %} 
                                           {% if grandchild_list != blank %} 
