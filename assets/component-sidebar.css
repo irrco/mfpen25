@@ -237,7 +237,7 @@ ul.dropDown_container ul {
 .link_title.active + .child-list-wrapper {
   padding: 2rem 0px;
 }
-.link_title.active + .child-list-wrapper {
+.link_details:not(:nth-child2)) .link_title.active + .child-list-wrapper {
     padding: 2rem 0px 2rem 2rem;
 }
   /*======== Socials =========*/
