@@ -58,7 +58,7 @@
         "custom_liquid_q3cAGx": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p> {{ product.metafields.custom.size_and_fit.value }}</p>"
+            "custom_liquid": "<p class=\"metafield-plain_text_field\"> {{ product.metafields.custom.size_and_fit.value }}</p>"
           }
         },
         "text_DfG6U6": {
