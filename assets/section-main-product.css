@@ -241,6 +241,12 @@ a.product__text {
   color: rgba(var(--color-foreground), 0.75);
 }
 
+
+.product__text.subtitle {
+  font-weight:bold;
+  font-family: var(--font-heading-family);
+}
+
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
 }
