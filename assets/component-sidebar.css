@@ -111,6 +111,7 @@
   .link_title { 
   font-family: var(--font-heading-family);
     text-transform:uppercase;
+    font-weight:normal;
   }
 
  .link_title,
