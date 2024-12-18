@@ -226,7 +226,7 @@ ul.dropDown_container {
 
 }
 ul.dropDown_container ul {
-  padding-inline-start: 2rem; 
+  padding-inline-start: 40px; 
 }
 
 .link_title.active,
