@@ -258,7 +258,7 @@ a.product__text {
   display: none;
 }
 
-.product__title h1 {
+.product__title > h1 {
   font-weight:bold;
 }
 .product__title + .product__text.caption-with-letter-spacing {
