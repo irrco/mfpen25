@@ -228,7 +228,7 @@ ul.dropDown_container {
 }
 
 ul.dropDown_container ul {
-  padding-inline-start: 40px; 
+      padding:0px 0px 0px 40px;
 }
   /*======== Socials =========*/
  
