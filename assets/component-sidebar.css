@@ -229,7 +229,7 @@ ul.dropDown_container ul {
   padding-inline-start: 40px; 
 }
 
-.child-list-wrapper {
+.link_title.active + .child-list-wrapper {
   padding: 2rem 0px;
 }
   /*======== Socials =========*/
