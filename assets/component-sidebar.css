@@ -221,8 +221,12 @@
 
 ul.dropDown_container {
   padding-inline-start: 0px; 
-  padding:40px 0px;
 }
+
+.link_details li ul.dropDown_container {
+    padding:40px 0px;
+}
+
 ul.dropDown_container ul {
   padding-inline-start: 40px; 
 }
