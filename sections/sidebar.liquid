@@ -26,7 +26,7 @@
                       {% assign child_list_handle = link.title | handleize %} 
                       {% assign child_list = linklists[child_list_handle] %} 
                         {% if child_list != blank %} 
-                          
+                          <div class="child-list-wrapper">
                                 {% assign child_link  = child_list.links %} 
                           <input type="checkbox" class="dropDown_btn" id= {{ link.title }} {% if link.active or link.child_active %}checked{% endif %} /> 
                             <label for= {{ link.title }} class="dropDown_icon"> 
@@ -51,6 +51,7 @@
                                           {% endif %}
                                     </ul>
                            {% endfor %}
+                          </div>
                           {% endif %}
                    </li>
               </div> 
