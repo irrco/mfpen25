@@ -12,6 +12,19 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_HhJ7H6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.size_and_fit.value }}"
+          }
+        },
+        "text_t7FwwT": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        },
         "vendor": {
           "type": "text",
           "disabled": true,
@@ -108,6 +121,8 @@
         }
       },
       "block_order": [
+        "custom_liquid_HhJ7H6",
+        "text_t7FwwT",
         "vendor",
         "title",
         "caption",
