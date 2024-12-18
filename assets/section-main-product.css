@@ -243,21 +243,23 @@ a.product__text {
 
 .product__info-wrapper .product-single__description p,
 .product__info-wrapper .metafield-plain_text_field,
-.product__info-wrapper .metafield-rich_text_field p{
+.product__info-wrapper .metafield-rich_text_field p {
   padding-left:2rem;
 }
+
+.related-products-wrapper h3 {
+  display:none;
+}
+
 .product__text.subtitle {
   font-weight:bold;
   font-family: var(--font-heading-family);
   font-size:inherit;
-   line-height: inherit;
+  line-height: inherit;
   letter-spacing: inherit;
   color: rgba(var(--color-foreground), 1);
   padding-left:0px;
 }
-
-
-
 
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
