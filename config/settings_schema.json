@@ -124,28 +124,7 @@
         "unit": "%",
         "label": "t:settings_schema.typography.settings.heading_scale.label",
         "default": 100
-      },
-      {
-        "type": "header",
-        "content": "Heading Font Bold"
-      },
-      {
-        "type": "font_picker",
-        "id": "type_header_font_bold",
-        "default": "assistant_n4",
-        "label": "t:settings_schema.typography.settings.type_header_font.label",
-        "info": "t:settings_schema.typography.settings.type_header_font.info"
-      },
-      {
-        "type": "range",
-        "id": "heading_bold_scale",
-        "min": 10,
-        "max": 500,
-        "step": 5,
-        "unit": "%",
-        "label": "t:settings_schema.typography.settings.heading_scale.label",
-        "default": 100
-      },      
+      },   
       {
         "type": "header",
         "content": "t:settings_schema.typography.settings.header__2.content"
