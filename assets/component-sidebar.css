@@ -229,6 +229,9 @@ ul.dropDown_container ul {
   padding-inline-start: 40px; 
 }
 
+.link_title.active {
+  font-weight:bold;
+}
 .link_title.active + .child-list-wrapper {
   padding: 2rem 0px;
 }
