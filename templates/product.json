@@ -71,7 +71,7 @@
         "custom_liquid_HhJ7H6": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ product.metafields.custom.product_details.value }}"
+            "custom_liquid": "{{ product.metafields.custom.product_details.value| metafield_tag }}"
           }
         },
         "text_PELRWJ": {
