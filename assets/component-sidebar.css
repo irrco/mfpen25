@@ -226,16 +226,19 @@ ul.dropDown_container {
 
 }
 ul.dropDown_container ul {
-  padding-inline-start: 40px; 
+  padding-inline-start: 2rem; 
 }
 
 .link_title.active,
 .link_title.child-active{
   font-weight:bold;
 }
-.link_title.child-active + .child-list-wrapper,
+
 .link_title.active + .child-list-wrapper {
   padding: 2rem 0px;
+}
+.link_title.child-active + .child-list-wrapper {
+    padding: 2rem 0px 2rem 2rem;
 }
   /*======== Socials =========*/
  
