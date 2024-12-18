@@ -122,7 +122,7 @@
     font-weight: normal;
     letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
     color: rgb(var(--color-foreground));
-    line-height: 2.4rem;
+    line-height: 2.5rem;
     word-break: break-word;
     text-decoration:none;
   }
@@ -219,8 +219,13 @@
   background-color: {{section.settings.link_hover}} !important; 
 }
 
- 
-   /*======== Socials =========*/
+ul.dropDown_container {
+  padding-inline-start: 0px; 
+}
+ul.dropDown_container ul {
+  padding-inline-start: 40px; 
+}
+  /*======== Socials =========*/
  
   /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
  
