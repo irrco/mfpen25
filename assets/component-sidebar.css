@@ -226,6 +226,10 @@ ul.dropDown_container {
 ul.dropDown_container ul {
   padding-inline-start: 40px; 
 }
+
+.child-list-wrapper {
+  padding: 10px 0px;
+}
   /*======== Socials =========*/
  
   /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
