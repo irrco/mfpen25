@@ -12,17 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "custom_liquid_HhJ7H6": {
+        "custom_liquid_q3cAGx": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{{ product.metafields.custom.size_and_fit.value }}"
-          }
-        },
-        "text_t7FwwT": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
           }
         },
         "vendor": {
@@ -57,6 +50,12 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "custom_liquid_HhJ7H6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.size_and_fit.value }}"
+          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -121,14 +120,14 @@
         }
       },
       "block_order": [
-        "custom_liquid_HhJ7H6",
-        "text_t7FwwT",
+        "custom_liquid_q3cAGx",
         "vendor",
         "title",
         "caption",
         "price",
         "quantity_selector",
         "description",
+        "custom_liquid_HhJ7H6",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
