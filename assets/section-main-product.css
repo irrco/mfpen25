@@ -245,6 +245,13 @@ a.product__text {
 .product__text.subtitle {
   font-weight:bold;
   font-family: var(--font-heading-family);
+  font-size:inherit;
+   line-height: inherit;
+  letter-spacing: inherit;
+  color: rgba(var(--color-foreground), 1);
+}
+
+
 }
 
 .product__text.caption-with-letter-spacing {
