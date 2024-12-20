@@ -66,16 +66,6 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-                 {%- if block.settings.link != blank -%}
-                  <a
-                    class="link animate-arrow"
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                  >
-                  {%- endif -%}
           
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -162,9 +152,6 @@
             </div>
           </li>
 
-                 {%- if block.settings.link != blank -%}
-                   </a>
-                  {%- endif -%}
           
         {%- endfor -%}
       </ul>
