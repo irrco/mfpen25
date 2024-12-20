@@ -161,3 +161,7 @@ background: transparent;
     column-gap: 0rem;
   }
 }
+
+.multicolumn-card__info .svg-wrapper {
+  display:none;
+}
