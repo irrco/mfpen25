@@ -168,8 +168,8 @@ background: transparent;
 
 .product-form__input input[type=radio]:checked+label,
 .product-form__input--pill input[type=radio]+label {
-  background:inherit;
-  color:inherit;
-  border:0px;
-  display:block;
+  background:inherit !important;
+  color:inherit !important;
+  border:0px !important;
+  display:block !important;
 }
