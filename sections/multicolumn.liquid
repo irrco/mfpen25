@@ -111,16 +111,7 @@
                       calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
                     {% endcapture %}
                     
-                 {%- if block.settings.link != blank -%}
-                  <a
-                    class="link animate-arrow"
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                  >
-                  {%- endif -%}
+
                     {{
                       block.settings.image
                       | image_url: width: 3200
@@ -129,9 +120,7 @@
                         sizes: sizes,
                         class: 'multicolumn-card__image'
                     }}
-                   {%- if block.settings.link != blank -%}
-                     </a>
-                   {%- endif -%} 
+
                   </div>                
                 </div>
  
