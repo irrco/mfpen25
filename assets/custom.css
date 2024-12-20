@@ -158,6 +158,6 @@ background: transparent;
 
 @media screen and (min-width: 750px) {
   .grid {
-    column-gap: 4rem;
+    column-gap: 0rem;
   }
 }
