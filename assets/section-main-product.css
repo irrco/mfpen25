@@ -272,8 +272,8 @@ legend.form__label {
 }
 
 .price--large {
-  font-size:inherit;
-  letter-spacing:inherit;
+  font-size:inherit  !important;
+  letter-spacing:inherit  !important;
 }
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
