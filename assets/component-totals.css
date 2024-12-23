@@ -10,7 +10,11 @@
 }
 
 .totals > h2 {
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  font-size: inherit !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-heading-family) !important;
+  font-style: var(--font-heading-style) !important;
+  font-weight: bold !important;  
 }
 
 .totals * {
