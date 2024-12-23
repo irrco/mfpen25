@@ -174,3 +174,7 @@ background: transparent;
   display:block !important;
   text-align:left !important;
 }
+
+.main-page-title.h0 {
+  padding-bottom:2rem;
+}
