@@ -166,7 +166,6 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 
 @media screen and (min-width: 750px) {
   .grid {
-    column-gap: 0rem;
   }
 }
 
