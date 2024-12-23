@@ -267,6 +267,9 @@ legend.form__label {
   padding-left:0px;
 }
 
+..product .price__container {
+  margin-left:2rem !important;
+}
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
 }
