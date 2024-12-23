@@ -64,7 +64,7 @@
         "text_DfG6U6": {
           "type": "text",
           "settings": {
-            "text": "Product Details",
+            "text": "Product Details:",
             "text_style": "subtitle"
           }
         },
@@ -114,6 +114,13 @@
             "share_label": "Share"
           }
         },
+        "text_eW8ydn": {
+          "type": "text",
+          "settings": {
+            "text": "Price:",
+            "text_style": "subtitle"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -149,6 +156,7 @@
         "collapsible-row-0",
         "collapsible-row-1",
         "share",
+        "text_eW8ydn",
         "price",
         "variant_picker",
         "buy_buttons"
