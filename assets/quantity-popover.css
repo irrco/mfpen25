@@ -173,5 +173,5 @@ quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
     text-transform: uppercase !important;
     font-family: var(--font-heading-family) !important;
     font-style: var(--font-heading-style) !important;
-    font-weight: 700 !important;
+    font-weight: bold !important;
 }
