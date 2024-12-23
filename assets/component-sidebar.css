@@ -91,6 +91,7 @@
 
   .sideBar_title { 
     font-size:inherit;
+    font-weight:inherit;
   }
 
 .sideBar_title p strong {
