@@ -44,7 +44,7 @@
                       >
                         <div class="menu-drawer__inner-submenu">
                           <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
-                            <span class="svg-wrapper">
+                            <span class="svg-wrapper" style="display:none">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
                             </span>
                             {{ link.title | escape }}
@@ -70,7 +70,7 @@
                                       class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                     >
                                       {{ childlink.title | escape }}
-                                      <span class="svg-wrapper">
+                                      <span class="svg-wrapper" style="display:none">
                                         {{- 'icon-arrow.svg' | inline_asset_content -}}
                                       </span>
                                       <span class="svg-wrapper">
