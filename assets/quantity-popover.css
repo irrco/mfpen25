@@ -177,6 +177,6 @@ quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
 }
 
 .quantity__button svg path:nth-child(1) {
-  stroke-width: 0.25;
+  stroke-width: 1;
   stroke:black;
 }
