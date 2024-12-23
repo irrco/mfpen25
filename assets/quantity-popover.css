@@ -167,3 +167,11 @@ quantity-popover .quantity__button:not(:focus-visible):not(.focused),
 quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
   background-color: initial;
 }
+
+.quantity__button {
+  font-size: inherit !important;
+    text-transform: uppercase !important;
+    font-family: var(--font-heading-family) !important;
+    font-style: var(--font-heading-style) !important;
+    font-weight: 700 !important;
+}
