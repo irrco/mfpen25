@@ -256,7 +256,8 @@ a.product__text {
   display:none;
 }
 
-.product__text.subtitle {
+.product__text.subtitle,
+legend.form__label {
   font-weight:bold;
   font-family: var(--font-heading-family);
   font-size:inherit;
