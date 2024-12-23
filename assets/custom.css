@@ -207,6 +207,11 @@ background: transparent;
 
 }
 
+.header-wrapper {
+
+  background-color: transparent;
+}
+
 
 @media screen and (max-width: 749px) {
 
