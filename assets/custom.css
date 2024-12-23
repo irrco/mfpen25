@@ -173,7 +173,7 @@ h0,h1,h2,h3,h4,h5,h6,h7 {
   text-transform:uppercase !important;
   font-family: var(--font-heading-family) !important;
   font-style: var(--font-heading-style) !important;
-  font-weight: var(--font-heading-weight) !important;
+  font-weight: bold !important;
 }
 .product-form__input input[type=radio]:checked+label {
   text-decoration:underline !important;
