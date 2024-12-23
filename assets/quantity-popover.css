@@ -179,7 +179,7 @@ quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
 }
 
 .quantity__button {
-  width:2rem;
+  width:4rem;
 }
 
 .quantity__button svg path:nth-child(1) {
