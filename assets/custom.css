@@ -171,8 +171,8 @@ h0,h1,h2,h3,h4,h5,h6,h7 {
   display:block !important;
   text-align:left !important;
 }
-.product-form__input--pill input[type=radio]:checked+label {
-  text-decoration:underline;
+.product-form__input input[type=radio]:checked+label {
+  text-decoration:underline !important;
 }
 .main-page-title.h0 {
   padding-bottom:2rem;
