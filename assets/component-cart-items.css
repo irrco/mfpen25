@@ -122,7 +122,6 @@ cart-items .title-wrapper-with-link {
 
 .cart-item cart-remove-button .button--tertiary {
   font-size: inherit !important;
-  text-transform: uppercase !important;
   font-family: var(--font-heading-family) !important;
   font-style: var(--font-heading-style) !important;
   font-weight: bold !important;
