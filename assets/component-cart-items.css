@@ -16,7 +16,7 @@ cart-items .title-wrapper-with-link {
 }
 
 .cart-item__quantity-wrapper {
-  display: flex;
+  display: block;
 }
 
 .cart-item__totals {
