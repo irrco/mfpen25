@@ -271,6 +271,9 @@ legend.form__label {
   margin-left:2rem !important;
 }
 
+.product__tax.caption {
+  display:none;
+}
 .price--large {
   font-size:inherit  !important;
   letter-spacing:inherit  !important;
