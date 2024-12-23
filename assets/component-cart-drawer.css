@@ -325,6 +325,11 @@ cart-drawer-items {
 
 .cart-drawer .cart__checkout-button {
   max-width: none;
+  font-size: inherit !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-heading-family) !important;
+  font-style: var(--font-heading-style) !important;
+  font-weight: bold !important;    
 }
 
 .drawer__footer .cart__dynamic-checkout-buttons {
