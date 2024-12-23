@@ -172,6 +172,7 @@ quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
   width:4rem;
 }
 
+.quantity__input[type=number],
 .quantity__button {
   font-size: inherit !important;
     text-transform: uppercase !important;
