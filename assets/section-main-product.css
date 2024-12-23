@@ -201,6 +201,11 @@ product-info {
 
 .product-form__submit {
   margin-bottom: 1rem;
+  font-size: inherit !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-heading-family) !important;
+  font-style: var(--font-heading-style) !important;
+  font-weight: bold !important;  
 }
 
 .product-form__submit[aria-disabled='true'] + .shopify-payment-button .shopify-payment-button__button[disabled],
