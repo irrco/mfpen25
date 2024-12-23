@@ -581,14 +581,14 @@ details > * {
 }
 
 :root {
-  --duration-short: 100ms;
-  --duration-default: 200ms;
-  --duration-announcement-bar: 250ms;
-  --duration-medium: 300ms;
-  --duration-long: 500ms;
-  --duration-extra-long: 600ms;
-  --duration-extra-longer: 750ms;
-  --duration-extended: 3s;
+  --duration-short: 0ms;
+  --duration-default: 0ms;
+  --duration-announcement-bar: 0ms;
+  --duration-medium: 0ms;
+  --duration-long: 0ms;
+  --duration-extra-long: 0ms;
+  --duration-extra-longer: 0ms;
+  --duration-extended: 0ms;
   --ease-out-slow: cubic-bezier(0, 0, 0.3, 1);
   --animation-slide-in: slideIn var(--duration-extra-long) var(--ease-out-slow) forwards;
   --animation-fade-in: fadeIn var(--duration-extra-long) var(--ease-out-slow);

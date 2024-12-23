@@ -178,3 +178,7 @@ background: transparent;
 .main-page-title.h0 {
   padding-bottom:2rem;
 }
+
+.media>img {
+  transition: opacity 0s;
+}
