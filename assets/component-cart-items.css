@@ -120,6 +120,14 @@ cart-items .title-wrapper-with-link {
   margin-left: 0rem;
 }
 
+.cart-item cart-remove-button .button--tertiary {
+  font-size: inherit !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-heading-family) !important;
+  font-style: var(--font-heading-style) !important;
+  font-weight: bold !important;
+}
+
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .cart-item cart-remove-button {
     width: 4.5rem;
