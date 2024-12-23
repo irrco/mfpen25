@@ -181,6 +181,7 @@ cart-drawer {
 
 .cart-drawer thead {
   display: inline-table;
+  display:none;
   width: 100%;
 }
 
