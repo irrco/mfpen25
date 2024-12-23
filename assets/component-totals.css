@@ -30,7 +30,11 @@
 }
 
 .totals__total-value {
-  font-size: 1.8rem;
+  font-size: inherit !important;
+  text-transform: uppercase !important;
+  font-family: var(--font-heading-family) !important;
+  font-style: var(--font-heading-style) !important;
+  font-weight: bold !important;  
 }
 
 .cart__ctas + .totals {
