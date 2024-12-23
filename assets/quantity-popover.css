@@ -168,17 +168,18 @@ quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
   background-color: initial;
 }
 
-.quantity__input[type=number] {
-  width:4rem;
-}
 
-.quantity__input[type=number],
-.quantity__button {
+.quantity__input[type=number] {
   font-size: inherit !important;
     text-transform: uppercase !important;
     font-family: var(--font-heading-family) !important;
     font-style: var(--font-heading-style) !important;
     font-weight: bold !important;
+    width:4rem;
+}
+
+.quantity__button {
+  width:2rem;
 }
 
 .quantity__button svg path:nth-child(1) {
