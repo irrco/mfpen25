@@ -267,8 +267,13 @@ legend.form__label {
   padding-left:0px;
 }
 
-..product .price__container {
+.product .price__container {
   margin-left:2rem !important;
+}
+
+.price--large {
+  font-size:inherit;
+  letter-spacing:inherit;
 }
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
