@@ -202,6 +202,6 @@ background: transparent;
 
 @media screen and (min-width: 990px) {
     .header__heading, .header__heading-link {
-        text-align: center;
+        text-align: center !important;
     }
 }
