@@ -145,7 +145,8 @@ background: transparent;
   text-transform:uppercase
 }
 
-h0,h1,h2,h3,h4,h5,h6,h7 {
+h0,h1,h2,h3,h4,h5,h6,h7,
+.h0,.h1,.h2,.h3,.h4,.h5,.h6,.h7{
   font-size:inherit !important;
   text-transform:uppercase !important;
   font-family: var(--font-heading-family) !important;
@@ -154,7 +155,8 @@ h0,h1,h2,h3,h4,h5,h6,h7 {
 }
 
 @media only screen and (min-width: 750px) {
-  h0,h1,h2,h3,h4,h5,h6,h7 {
+  h0,h1,h2,h3,h4,h5,h6,h7,
+  .h0,.h1,.h2,.h3,.h4,.h5,.h6,.h7{
   font-size:inherit !important;
 }
 }
