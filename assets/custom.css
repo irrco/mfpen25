@@ -129,12 +129,11 @@ background: transparent;
 }
 
 
-
-    .main-page-title {
-        margin-bottom: 0rem !important;
-      text-transform:uppercase;
-      font-weight:bold;
-    }
+.main-page-title {
+    margin-bottom: 0rem !important;
+  text-transform:uppercase;
+  font-weight:bold;
+}
 
 @media screen and (min-width: 750px) {
     .main-page-title {
@@ -172,7 +171,9 @@ h0,h1,h2,h3,h4,h5,h6,h7 {
   display:block !important;
   text-align:left !important;
 }
-
+.product-form__input--pill input[type=radio]:checked+label {
+  text-decoration:underline;
+}
 .main-page-title.h0 {
   padding-bottom:2rem;
 }
