@@ -294,6 +294,7 @@ cart-drawer-items {
 @media screen and (max-width: 749px) {
   .cart-drawer .cart-item cart-remove-button {
     margin-left: 0;
+   grid-column:2/5;
   }
 }
 
