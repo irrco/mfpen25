@@ -170,10 +170,10 @@ h0,h1,h2,h3,h4,h5,h6,h7 {
   border:0px !important;
   display:block !important;
   text-align:left !important;
-  text-transform:uppercase;
-  font-family: var(--font-heading-family);
-  font-style: var(--font-heading-style);
-  font-weight: var(--font-heading-weight);
+  text-transform:uppercase !important;
+  font-family: var(--font-heading-family !important);
+  font-style: var(--font-heading-style) !important;
+  font-weight: var(--font-heading-weight !important);
 }
 .product-form__input input[type=radio]:checked+label {
   text-decoration:underline !important;
