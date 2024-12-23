@@ -197,11 +197,9 @@ background: transparent;
         padding-top: 20px !important;
         padding-bottom: 20px !important;
     }
-}
-}
-
-@media screen and (min-width: 990px) {
-    .header__heading, .header__heading-link {
+      .header__heading, .header__heading-link {
         text-align: center !important;
     }
 }
+
+
