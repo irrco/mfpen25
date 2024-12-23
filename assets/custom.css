@@ -1,5 +1,5 @@
 :root {
-  --sidebar-width: 304px; 
+  --sidebar-width: 250px; 
   --page-gutter: 36px;
   overscroll-behavior: none;
 }
