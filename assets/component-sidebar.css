@@ -91,7 +91,7 @@
 
   .sideBar_title { 
     font-size:inherit;
-    font-weight:inherit;
+    font-weight:inherit !important;
   }
 
 .sideBar_title p strong {
@@ -125,7 +125,7 @@
     font-weight: normal;
     letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
     color: rgb(var(--color-foreground));
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     word-break: break-word;
     text-decoration:none;
   }
