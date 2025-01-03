@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "custom_liquid_eiFKEE": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 64,
-        "padding_bottom": 0
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -105,7 +96,6 @@
     }
   },
   "order": [
-    "custom_liquid_eiFKEE",
     "image_banner",
     "multicolumn",
     "custom_liquid_yMLBiJ",
