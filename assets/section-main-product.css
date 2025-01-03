@@ -243,7 +243,7 @@ product-info {
 .product__info-container .product-form,
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .product__text {
@@ -261,7 +261,7 @@ a.product__text {
 .product__info-wrapper .metafield-rich_text_field p,
 .product__info-wrapper .product__description p {
   padding-left:3.5rem;
-  margin-top:0;
+  margin-top:1rem;
 }
 
 .related-products-wrapper h3 {
