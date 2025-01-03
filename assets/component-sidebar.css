@@ -96,6 +96,10 @@
     margin-top:0px;
   }
 
+.sideBar_title p {
+  padding:0;
+  margin:0;
+}
 .sideBar_title p strong {
   font-weight:bold;
   text-transform:uppercase
