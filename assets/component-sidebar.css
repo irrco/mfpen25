@@ -99,10 +99,14 @@
 .sideBar_title p {
   padding:0;
   margin:0;
+
+  font-family: var(--font-body-family);  
 }
+
 .sideBar_title p strong {
   font-weight:bold;
-  text-transform:uppercase
+  text-transform:uppercase;
+  font-family: var(--font-heading-family);
 }
  
   .sideBar_title:hover { 
