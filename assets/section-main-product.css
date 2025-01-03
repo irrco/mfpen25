@@ -259,7 +259,7 @@ a.product__text {
 .product__info-wrapper .product-single__description p,
 .product__info-wrapper .metafield-plain_text_field,
 .product__info-wrapper .metafield-rich_text_field p {
-  padding-left:2rem;
+  padding-left:3.5rem;
 }
 
 .related-products-wrapper h3 {
