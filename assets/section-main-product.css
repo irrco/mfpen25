@@ -265,6 +265,10 @@ a.product__text {
   margin-top:1rem;
 }
 
+.product__info-container a {
+  color: black;
+}
+
 .related-products-wrapper h3 {
   display:none;
 }
