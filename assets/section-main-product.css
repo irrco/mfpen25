@@ -259,7 +259,8 @@ a.product__text {
 .product__info-wrapper .product-single__description p,
 .product__info-wrapper .metafield-plain_text_field,
 .product__info-wrapper .metafield-rich_text_field p,
-.product__info-wrapper .product__description p {
+.product__info-wrapper .product__description p,
+.related-products-wrapper {
   padding-left:3.5rem;
   margin-top:1rem;
 }
