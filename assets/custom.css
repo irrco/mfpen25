@@ -49,7 +49,7 @@
 .sideBar_container {
   width:var(--sidebar-width);
   position:fixed;
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .sideBar_container label.menu_icon,
