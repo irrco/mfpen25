@@ -35,6 +35,13 @@
   overscroll-behavior: none;
 }
 
+.page-id-index .content-group #MainContent {
+  padding-right:var(--page-gutter);  
+  margin-right:15rem;  
+  margin-left:var(--page-gutter);
+  padding-left:8rem;
+}
+
 .menu-drawer-container {
   
 }
