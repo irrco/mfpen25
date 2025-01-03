@@ -261,6 +261,7 @@ a.product__text {
 .product__info-wrapper .metafield-rich_text_field p,
 .product__info-wrapper .product__description p {
   padding-left:3.5rem;
+  margin-top:0;
 }
 
 .related-products-wrapper h3 {
