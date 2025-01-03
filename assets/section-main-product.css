@@ -269,6 +269,14 @@ a.product__text {
   color: black;
 }
 
+.product__info-wrapper variant-selects {
+  padding-left:3.5rem;
+}
+
+.product__info-wrapper legend {
+  display:none;
+}
+
 .related-products-wrapper h3 {
   display:none;
 }
