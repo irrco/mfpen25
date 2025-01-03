@@ -92,6 +92,7 @@
   .sideBar_title { 
     font-size:inherit;
     font-weight:inherit !important;
+    padding-bottom:7rem;
   }
 
 .sideBar_title p strong {
