@@ -3,6 +3,11 @@
   --page-gutter: 2rem;
   overscroll-behavior: none;
 }
+
+.header__heading-logo {
+  width:96px;
+}
+
 .content-group {
   display: flex;
   flex-direction: row;
