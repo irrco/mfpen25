@@ -221,6 +221,7 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 
     .header--middle-left .header__heading-link, .header--top-left .header__heading-link {
         margin-left: 0;
+      padding-left:0;
     }
 
 }
