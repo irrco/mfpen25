@@ -579,13 +579,13 @@ legend.form__label {
 
 @media screen and (min-width: 990px) {
   .product--stacked .product__media-item {
-    max-width: 100%;
-    width:100%;
+    width: 32vw;
+    max-width: 32vw;
   }
 
   .product:not(.product--columns) .product__media-list .product__media-item:first-child,
   .product:not(.product--columns) .product__media-list .product__media-item--full {
-    width: 100%;
+    width: 32vw;
     max-width: 32vw;
   }
 
