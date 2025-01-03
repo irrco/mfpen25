@@ -186,10 +186,10 @@
         --spacing-sections-desktop: {{ settings.spacing_sections }}px;
         --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
 
-        --grid-desktop-vertical-spacing: 4rem;
-        --grid-desktop-horizontal-spacing:4rem;
-        --grid-mobile-vertical-spacing: 2rem;
-        --grid-mobile-horizontal-spacing: 2rem;
+        --grid-desktop-vertical-spacing: 0.8rem;
+        --grid-desktop-horizontal-spacing:0.8rem;
+        --grid-mobile-vertical-spacing: 0.8rem;
+        --grid-mobile-horizontal-spacing: 0.8rem;
 
         --text-boxes-border-opacity: {{ settings.text_boxes_border_opacity | divided_by: 100.0 }};
         --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
