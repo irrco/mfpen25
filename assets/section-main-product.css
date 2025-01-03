@@ -94,8 +94,8 @@ product-info {
 
 @media screen and (min-width: 1265px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
-      max-width: calc((100vh - 170px)* 0.6158977209560867);
-      width: calc((100vh - 170px)* 0.6158977209560867);
+      max-width: calc((100vh - 0px)* 0.6158977209560867);
+      width: calc((100vh - 0px)* 0.6158977209560867);
   }
 }
   
