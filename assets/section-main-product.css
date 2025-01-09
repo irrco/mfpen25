@@ -434,6 +434,9 @@ legend.form__label {
   padding-left: 3.5rem;
 }
 
+.button--full-width {
+  width:inherit
+}
 .product--no-media .product__info-container > modal-opener {
   display: block;
   text-align: center;
