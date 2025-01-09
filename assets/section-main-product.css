@@ -432,6 +432,12 @@ legend.form__label {
 .product-form__buttons {
   max-width: 44rem;
   padding-left: 3.5rem;
+  height: 30px;
+  overflow: hidden;
+}
+
+.product-form__buttons span {
+  margin-top: -20px;
 }
 
 .button--full-width {
