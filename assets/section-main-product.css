@@ -267,6 +267,7 @@ a.product__text {
 
 .product__info-container a {
   color: black;
+  text-decoration:none;
 }
 
 .product__info-wrapper variant-selects {
