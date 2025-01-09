@@ -134,7 +134,7 @@ background: transparent;
 
 @media screen and (min-width: 750px) {
     .product--large:not(.product--no-media) .product__info-wrapper {
-        margin-top:8rem;
+        margin-top:6rem;
     }
   .product__media {
     height:100vh;
