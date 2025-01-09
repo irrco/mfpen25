@@ -440,6 +440,11 @@ legend.form__label {
   margin-top: -18px;
 }
 
+.product-form__buttons .button {
+  padding: 0 0rem;
+}
+
+
 .button--full-width {
   width:inherit
 }
