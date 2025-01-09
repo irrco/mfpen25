@@ -431,6 +431,7 @@ legend.form__label {
 
 .product-form__buttons {
   max-width: 44rem;
+  padding-left: 3.5rem;
 }
 
 .product--no-media .product__info-container > modal-opener {
