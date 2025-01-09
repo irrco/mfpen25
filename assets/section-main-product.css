@@ -630,6 +630,10 @@ legend.form__label {
   }
 }
 
+.product__modal-opener .product__media-icon {
+  display:none;
+}
+
 .product__media-item > * {
   display: block;
   position: relative;
