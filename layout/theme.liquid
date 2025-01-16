@@ -383,8 +383,7 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="{{ 'cookieconsent.js' | asset_url }}" defer="defer"></script>
     <script>
 window.cookieconsent.initialise({
   "palette": {
