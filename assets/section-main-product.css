@@ -284,13 +284,14 @@ a.product__text {
 
 .product__text.subtitle,
 legend.form__label {
-  font-weight:bold;
+  font-weight:inherit;
   font-family: var(--font-heading-family);
   font-size:inherit;
   line-height: inherit;
   letter-spacing: inherit;
   color: rgba(var(--color-foreground), 1);
   padding-left:0px;
+  text-transform:uppercase;
 }
 
 .product .price__container {
