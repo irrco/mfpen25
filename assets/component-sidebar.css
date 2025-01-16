@@ -251,7 +251,7 @@ ul.dropDown_container ul {
 }
 
 
-.link_title.child-active + .child-list-wrapper:nth-child(3) {
+.link_title.child-active + .child-list-wrapper ul.dropDown_container {
   padding: 20rem 0px 0px 0px;
 }
 .link_details:not(:nth-child(1)) .link_title.active + .child-list-wrapper,
