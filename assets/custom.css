@@ -261,3 +261,8 @@ h0,h1,h2,h3,h4,h5,h6,h7,
   box-shadow: 0 0 0 var(--inputs-border-width) rgb(255 255 255 / 0%) !important;
 }
 
+
+.footer__content-bottom-wrapper {
+  display:none;
+}
+
