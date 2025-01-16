@@ -22,7 +22,7 @@
               {% for link in linklists[section.settings.sidebar_top_link_list].links%} 
                 <div class="link_details"> 
                  <li>
-                   <a class="link_title {% if link.active %} active {% endif %} {% if link.child_active %} child-active {% endif %} {% if template.name == "product" %} child-active {% endif %}" href="{{ link.url }}" >{{ link.title }}</a> 
+                   <a class="link_title {% if link.active %} active {% endif %} {% if link.child_active %} child-active {% endif %} {% if template.name == "product" and link.levels == 3 %} child-active {% endif %}" href="{{ link.url }}" >{{ link.title }}</a> 
                       {% assign child_list_handle = link.title | handleize %} 
                       {% assign child_list = linklists[child_list_handle] %} 
                         {% if child_list != blank %} 
