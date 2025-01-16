@@ -28,7 +28,7 @@
                         {% if child_list != blank %} 
                           <div class="child-list-wrapper">
                                 {% assign child_link  = child_list.links %} 
-                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} {% if link.active or link.child_active %}checked{% endif %} {% if template.name == "product" %} child-active {% endif %} /> 
+                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} {% if link.active or link.child_active %}checked{% endif %} {% if template.name == "product" %} checked {% endif %} /> 
                             <label for= {{ link.title }} class="dropDown_icon"> 
                                   <span class="dropDown" ></span> 
                             </label> 
