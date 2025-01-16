@@ -557,6 +557,7 @@ hr {
 
 .full-unstyled-link:hover {
   text-decoration:none;
+  border:0px;
 }
 .placeholder {
   background-color: rgba(var(--color-foreground), 0.04);
