@@ -93,12 +93,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "popup_fiphiU": {
+      "type": "popup",
+      "settings": {
+        "trigger": "popuptrig",
+        "title": "here",
+        "content": "<p>this is content</p>"
+      }
     }
   },
   "order": [
     "image_banner",
     "multicolumn",
     "custom_liquid_yMLBiJ",
-    "video_eqXX3z"
+    "video_eqXX3z",
+    "popup_fiphiU"
   ]
 }
