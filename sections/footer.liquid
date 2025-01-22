@@ -93,7 +93,7 @@
                           <div style="display:inline-block;padding:0px 1rem">
                             <a
                               href="{{ link.url }}" {% if link.url contains "https://instagram.com" or link.url contains "https://spotify.com" %} target="_blank"{% endif %}
-                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              class="link link--text" style="text-decoration:none"
                             >
                               {{ link.title | escape }}
                             </a>
