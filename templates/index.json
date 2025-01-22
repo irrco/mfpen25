@@ -94,14 +94,6 @@
         "padding_bottom": 36
       }
     },
-    "popup_fiphiU": {
-      "type": "popup",
-      "settings": {
-        "trigger": "popuptrig",
-        "title": "here",
-        "content": "<p>this is content</p>"
-      }
-    },
     "newsletter_popup_39yJwD": {
       "type": "newsletter-popup",
       "settings": {
@@ -116,7 +108,6 @@
     "multicolumn",
     "custom_liquid_yMLBiJ",
     "video_eqXX3z",
-    "popup_fiphiU",
     "newsletter_popup_39yJwD"
   ]
 }
