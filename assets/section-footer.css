@@ -20,6 +20,7 @@
     padding: 0;
     margin: 4rem 0;
     width: 45%;
+    display:inline-block;
   }
 
   .footer-block.grid__item:first-child {
