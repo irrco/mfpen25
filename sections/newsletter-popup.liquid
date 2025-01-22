@@ -1,7 +1,7 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
-<a href="#{{ section.settings.trigger }}" class="">Open Popup</a>
+<a href="#{{ section.settings.trigger }}" class="" style="display:none">Open Popup</a>
 <div id="{{ section.settings.trigger }}" class="popup__overlay">
   <div class="popup__box">
     <h2>{{ section.settings.title }}</h2>
