@@ -97,7 +97,7 @@
     "newsletter_popup_39yJwD": {
       "type": "newsletter-popup",
       "settings": {
-        "trigger": "nltrigger",
+        "trigger": "newsletteropen",
         "title": "",
         "content": ""
       }
