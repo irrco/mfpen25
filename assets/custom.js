@@ -3,7 +3,7 @@ $(document).ready(function() {
     let isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
     if (isMobile) {
       
-      $('.product-grid-item-slider2').each(function(i, obj) {
+      $('.product-grid-item-slider').each(function(i, obj) {
           $(obj).slick({
             slidesToShow: 1,
             slidesToScroll: 1,
