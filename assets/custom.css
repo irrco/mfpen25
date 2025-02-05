@@ -266,3 +266,8 @@ h0,h1,h2,h3,h4,h5,h6,h7,
   display:none !important;
 }
 
+@media screen and (max-width: 749px) { 
+  .card--media .card__inner .card__content {
+    display:none;
+  }
+}
