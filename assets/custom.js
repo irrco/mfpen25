@@ -14,7 +14,7 @@ $(document).ready(function() {
             speed:300,
             lazyLoad:'progressive'
           });
-    
+          console.log('product-grid-item-slider init');
           $(obj).on('swipe', function(event, slick, direction){
             if (direction == 'left') {
               $(this).slick('slickNext')
