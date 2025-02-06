@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/mfpen-logo-25_3650db24-8357-445e-8d2a-8ccfd1ca21fd.svg",
     "logo_width": 130,
+    "favicon": "shopify://shop_images/face.jpg",
     "type_header_font": "helvetica_n4",
     "heading_scale": 30,
     "type_body_font": "georgia_pro_n4",
