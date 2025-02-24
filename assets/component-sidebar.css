@@ -228,7 +228,7 @@
 } 
 
 .dropDown_container .dropDown_container li:before {
-  content: '&middot;'
+  content: '\00B7'
 }
 
 
