@@ -69,10 +69,27 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_ckdXn7": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/240611__mfpen001685_17F.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "custom_liquid_7TnNi7",
+    "image_banner_ckdXn7",
     "main",
     "multicolumn_DK7gxT"
   ]
