@@ -234,6 +234,9 @@
   padding-right: 0.3rem;
 }
 
+ul.top_menu_list div.child-list-wrapper ul.dropDown_container li:before {
+  content:''
+}
 
 .dropDown_container:hover { 
   background-color: {{section.settings.link_hover}} !important; 
@@ -274,9 +277,6 @@ ul.top_menu_list {
   padding-bottom:2rem;
 }
 
-ul.top_menu_list div.child-list-wrapper ul.dropDown_container li:before {
-  content:''
-}
   /*======== Socials =========*/
  
   /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
