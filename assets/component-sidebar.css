@@ -265,6 +265,11 @@ ul.dropDown_container ul {
 .link_details:not(:nth-child(1)) .link_title.child-active + .child-list-wrapper{
     padding: 2rem 0px 2rem 2rem;
 }
+
+
+ul.top_menu_list div.child-list-wrapper ul.dropDown_container li:before {
+  content:''
+}
   /*======== Socials =========*/
  
   /* CSS might defer in other Shopify theme - adjust CSS when appropriate */
