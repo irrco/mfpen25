@@ -149,7 +149,7 @@
  
   .child_title,
   .grandchild_title {
-    
+  display:inline;
   }
  
   .link_details {
