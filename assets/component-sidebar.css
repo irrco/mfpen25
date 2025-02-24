@@ -228,7 +228,9 @@
 } 
 
 .dropDown_container .dropDown_container li:before {
-  content: '\00B7'
+  content: '\00B7';
+  display: inline;
+  padding-right: 0.3rem;
 }
 
 
