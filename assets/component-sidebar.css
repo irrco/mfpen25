@@ -227,6 +227,7 @@
   list-style-type: none;
 } 
 
+.dropDown_container li:before ,
 .dropDown_container .dropDown_container li:before {
   content: '\00B7';
   display: inline;
