@@ -270,8 +270,7 @@ ul.top_menu_list {
   
 }
 
-.top_menu ul.top_menu_list .link_details:nth-child(1) .child-list-wrapper *:nth-child(3)
-{
+.top_menu ul.top_menu_list .link_details:nth-child(1) .child-list-wrapper *:nth-child(3) {
   padding-bottom:2rem;
 }
 
