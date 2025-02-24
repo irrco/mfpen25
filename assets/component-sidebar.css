@@ -266,7 +266,7 @@ ul.dropDown_container ul {
     padding: 2rem 0px 2rem 2rem;
 }
 
- div.child-list-wrapper ul.dropDown_container:nth-child(1) {
+.child-list-wrapper ul.dropDown_container:nth-child(1) {
   background:red;
 }
 
