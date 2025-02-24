@@ -266,7 +266,12 @@ ul.dropDown_container ul {
     padding: 2rem 0px 2rem 2rem;
 }
 
-.child-list-wrapper ul.dropDown_container{
+ul.top_menu_list {
+  
+}
+
+.top_menu ul.top_menu_list .link_details:nth-child(1) .child-list-wrapper *:nth-child(4)
+{
   background:red;
 }
 
