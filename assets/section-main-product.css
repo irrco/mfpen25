@@ -288,7 +288,7 @@ legend.form__label {
   font-family: var(--font-heading-family);
   font-size:inherit;
   line-height: inherit;
-  letter-spacing: inherit;
+  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgba(var(--color-foreground), 1);
   padding-left:0px;
   text-transform:uppercase;
