@@ -46,3 +46,7 @@
 .video-section__media.media-fit-cover video {
   object-fit: cover;
 }
+
+.inline-video-wrapper video {
+    width: 100%;
+}
