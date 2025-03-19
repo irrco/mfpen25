@@ -50,3 +50,8 @@
 .inline-video-wrapper video {
     width: 100%;
 }
+
+.video-section .page-width {
+  padding:0px
+}
+}
