@@ -314,10 +314,6 @@ display: none;
     }
   }
 
-    .header__heading-logo {
-      height:auto;
-      width:clamp(18rem, 40vw, 40vw);
-    }
   
 
 
