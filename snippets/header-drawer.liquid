@@ -41,7 +41,7 @@
                         {% if child_list != blank %} 
                           <div class="child-list-wrapper">
                                 {% assign child_link  = child_list.links %} 
-                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} {% if link.active or link.child_active %}checked{% endif %}{% if template.name == "product" and link.levels == 2 %}checked{% endif %}   /> 
+                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} checked {% if template.name == "product" and link.levels == 2 %}checked{% endif %}   /> 
                             <label for= {{ link.title }} class="dropDown_icon"> 
                                   <span class="dropDown" ></span> 
                             </label> 
@@ -52,7 +52,7 @@
                                         {% assign grandchild_list = linklists[grandchild_list_handle] %} 
                                           {% if grandchild_list != blank %} 
                                             {% assign grandchild_link  = grandchild_list.links %} 
-                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} {% if link.active or link.child_active %}checked{% endif %} {% if template.name == "product"  %}checked{% endif %} /> 
+                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} checked {% if template.name == "product"  %}checked{% endif %} /> 
                                             <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
                                                   <span class="dropDown" ></span> 
                                             </label> 
