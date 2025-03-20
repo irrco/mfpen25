@@ -119,6 +119,7 @@ background: transparent;
 }
 .header-wrapper {
   position:fixed;
+  z-index:999;
 }
 
 .header__icons {
