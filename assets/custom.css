@@ -58,8 +58,11 @@
   margin-top: 6rem;
 }
 
+
 .sideBar_container label.menu_icon,
-.sideBar_container .menu_btn {
+.sideBar_container .menu_btn,
+.menu-drawer__navigation label.menu_icon,
+.menu-drawer__navigation .menu_btn {
   display:none;
 }
 
