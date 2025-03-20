@@ -35,7 +35,7 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   transform: translateX(-100%);
   visibility: hidden;
-  z-index: 1000;
+  z-index: 3;
   left: 0;
   top: 100%;
   width: 25rem;
@@ -313,6 +313,7 @@ display: none;
       padding-top: 0.5rem;
     }
   }
+
 
   
 
