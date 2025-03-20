@@ -319,13 +319,6 @@ display: none;
       width:clamp(18rem, 40vw, 40vw);
     }
   
-  @media screen and (min-width: 750px) {
-    .header__heading-logo {
-      height:auto;
-      
-      width:clamp(20rem, 20vw, 45rem);
-    }
-  }
 
 
   .header__icon--menu .icon {
@@ -337,22 +330,11 @@ display: none;
     margin-top: 1rem;
   }
   
-  @media screen and (min-width: 750px) {
-    .header.page-width, .utility-bar__grid.page-width {
-        padding-left: 3vw;
-        padding-right: 3vw;
-      padding-bottom: 4rem;
-    }
-}
-  .header__icons {
-    font-size:1rem !important;
-    text-transform:uppercase;
-    font-weight:bold;
-    text-decoration:none;
-  }
-
     @media screen and (min-width: 750px) {
-   .header__icons {
-    font-size:1.2rem;
+        .header.page-width, .utility-bar__grid.page-width {
+            padding-left: 3vw;
+            padding-right: 3vw;
+          padding-bottom: 4rem;
+        }
   }
-    }
+  }
