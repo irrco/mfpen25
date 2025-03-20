@@ -16,127 +16,131 @@
         {{- 'icon-close.svg' | inline_asset_content -}}
       </span>
     </summary>
-  <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
-      <div class="menu-drawer__inner-container">
-        <div class="menu-drawer__navigation-container">
-          <nav class="menu-drawer__navigation">           
-            <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              {%- for link in section.settings.menu.links -%}
-                <li>
-                  {%- if link.links != blank -%}
-                    <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
-                      <summary
-                        id="HeaderDrawer-{{ link.handle }}"
-                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
-                      >
-                        {{ link.title | escape }}
-                        <span class="svg-wrapper" style="display:none">
-                          {{- 'icon-arrow.svg' | inline_asset_content -}}
-                        </span>
-                        <span class="svg-wrapper">
-                          {{- 'icon-caret.svg' | inline_asset_content -}}
-                        </span>
-                      </summary>
-                      <div
-                        id="link-{{ link.handle | escape }}"
-                        class="menu-drawer__submenu has-submenu gradient motion-reduce"
-                        tabindex="-1"
-                      >
-                        <div class="menu-drawer__inner-submenu">
-                          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
-                            <span class="svg-wrapper" style="display:none">
-                              {{- 'icon-arrow.svg' | inline_asset_content -}}
-                            </span>
-                            {{ link.title | escape }}
-                          </button>
-                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                            {%- for childlink in link.links -%}
-                              <li>
-                                {%- if childlink.links == blank -%}
-                                  <a
-                                    id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                    href="{{ childlink.url }}"
-                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
-                                    {% if childlink.current %}
-                                      aria-current="page"
-                                    {% endif %}
-                                  >
-                                    {{ childlink.title | escape }}
-                                  </a>
-                                {%- else -%}
-                                  <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
-                                    <summary
-                                      id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                      class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
-                                    >
-                                      {{ childlink.title | escape }}
-                                      <span class="svg-wrapper" style="display:none">
-                                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                                      </span>
-                                      <span class="svg-wrapper">
-                                        {{- 'icon-caret.svg' | inline_asset_content -}}
-                                      </span>
-                                    </summary>
-                                    <div
-                                      id="childlink-{{ childlink.handle | escape }}"
-                                      class="menu-drawer__submenu has-submenu gradient motion-reduce"
-                                    >
-                                      <button
-                                        class="menu-drawer__close-button link link--text focus-inset"
-                                        aria-expanded="true"
-                                      >
-                                        <span class="svg-wrapper">
-                                          {{- 'icon-arrow.svg' | inline_asset_content -}}
-                                        </span>
-                                        {{ childlink.title | escape }}
-                                      </button>
-                                      <ul
-                                        class="menu-drawer__menu list-menu"
-                                        role="list"
-                                        tabindex="-1"
-                                      >
-                                        {%- for grandchildlink in childlink.links -%}
-                                          <li>
-                                            <a
-                                              id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
-                                              href="{{ grandchildlink.url }}"
-                                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"
-                                              {% if grandchildlink.current %}
-                                                aria-current="page"
-                                              {% endif %}
-                                            >
-                                              {{ grandchildlink.title | escape }}
-                                            </a>
-                                          </li>
-                                        {%- endfor -%}
-                                      </ul>
-                                    </div>
-                                  </details>
-                                {%- endif -%}
-                              </li>
-                            {%- endfor -%}
-                         </ul>
-                        </div>
-                      </div>
-                    </details>
-                  {%- else -%}
-                    <a
-                      id="HeaderDrawer-{{ link.handle }}"
-                      href="{{ link.url }}"
-                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                      {% if link.current %}
-                        aria-current="page"
-                      {% endif %}
-                    >
-                      {{ link.title | escape }}
-                    </a>
-                  {%- endif -%}
-                </li>
-              {%- endfor -%}                            
-            </ul>                        
-          </nav>
+
+  <div class="sideBar_overlay" id="sideBar_overlay"> 
+    <div class="sideBar" id="sideBar"> 
+      <h4 class="sideBar_title">{{section.settings.sideBar_title}}</h4> 
+
+      <input type="checkbox" class="menu_btn" id="menu_toggle" checked> 
+          <label for="menu_toggle"  class="inside_menu_icon menu_icon"> 
+                <span class="menu inside_menu"></span> 
+          </label> 
+      <div class="sideBar_inner"> 
+        <div class="top_menu"> 
+           {% assign link = linklists[section.settings.sidebar_top_link_list].link %} 
+            <ul class="top_menu_list">   
+              {% for link in linklists[section.settings.sidebar_top_link_list].links%} 
+                <div class="link_details"> 
+                 <li>
+                   <a class="link_title {% if link.active %} active {% endif %} {% if link.child_active %} child-active {% endif %} {% if template.name == "product" and link.levels == 2 %} child-active {% endif %}" href="{{ link.url }}" {% if link.url  contains "https://instagram.com" %} target="_blank"{% endif %}>{{ link.title }}</a> 
+                      {% assign child_list_handle = link.title | handleize %} 
+                      {% assign child_list = linklists[child_list_handle] %} 
+                        {% if child_list != blank %} 
+                          <div class="child-list-wrapper">
+                                {% assign child_link  = child_list.links %} 
+                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} {% if link.active or link.child_active %}checked{% endif %}{% if template.name == "product" and link.levels == 2 %}checked{% endif %}   /> 
+                            <label for= {{ link.title }} class="dropDown_icon"> 
+                                  <span class="dropDown" ></span> 
+                            </label> 
+                          {% for child_link in child_list.links %} 
+                                  <ul class="dropDown_container">                                  
+                                       <li><a class="child_title {% if link.active %} active {% endif %}{% if link.child_active %} child-active {% endif %} {% if template.name == "product" %} child-active {% endif %}" href="{{ child_link.url }}">{{ child_link.title }}</a></li>    
+                                    {% assign grandchild_list_handle = child_link.title | handleize %} 
+                                        {% assign grandchild_list = linklists[grandchild_list_handle] %} 
+                                          {% if grandchild_list != blank %} 
+                                            {% assign grandchild_link  = grandchild_list.links %} 
+                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} {% if link.active or link.child_active %}checked{% endif %} {% if template.name == "product"  %}checked{% endif %} /> 
+                                            <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
+                                                  <span class="dropDown" ></span> 
+                                            </label> 
+                                            {% for grandchild_link in grandchild_list.links %}
+                                             <ul class="dropDown_container">                                
+                                                 <li><a class="grandchild_title" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>                             
+                                             </ul>
+                                            {% endfor %}
+                                          {% endif %}
+                                    </ul>
+                           {% endfor %}
+                          </div>
+                          {% endif %}
+                   </li>
+              </div> 
+             {% endfor %} 
+          </ul> 
+        </div> 
+        <div class="bottom_menu">
+           {% assign link = linklists[section.settings.sidebar_bottom_link_list].link %} 
+            <ul>   
+              {% for link in linklists[section.settings.sidebar_bottom_link_list].links%} 
+              <div class="link_details">
+                 <li><a class="link_title" href="{{ link.url }}">{{ link.title }}</a> 
+                      {% assign child_list_handle = link.title | handleize %}
+                      {% assign child_list = linklists[child_list_handle] %}
+                        {% if child_list != blank %}
+                          {% assign child_link  = child_list.links %}
+                          <input type="checkbox" class="dropDown_btn" id= {{ link.title }} >
+                            <label for= {{ link.title }} class="dropDown_icon">
+                                  <span class="dropDown" ></span>
+                            </label>
+
+                                 {% for child_link in child_list.links %}
+                                  <ul class="dropDown_container">                                
+                                       <li><a class="child_title" href="{{ child_link.url }}">{{ child_link.title }}</a></li> 
+                                    {% assign grandchild_list_handle = child_link.title | handleize %}
+                                        {% assign grandchild_list = linklists[grandchild_list_handle] %}
+                                          {% if grandchild_list != blank %}
+                                              {% assign grandchild_link  = grandchild_list.links %}
+                                            <input type="checkbox" class="dropDown_btn" id= {{ child_link.title }} >
+                                              <label for= {{ child_link.title }} class="gCdropDown_icon dropDown_icon">
+                                                    <span class="dropDown" ></span>
+                                              </label>
+                                                  {% for grandchild_link in grandchild_list.links %}
+                                                   <ul class="dropDown_container">                                
+                                                       <li><a class="grandchild_title" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>                             
+                                                      </ul>
+                                             {% endfor %}
+                                           {% endif %}
+                                    </ul>
+                           {% endfor %}
+                    {% endif %}
+                   </li>
+               </div>
+               {% endfor %}
+          </ul>
         </div>
+ 
+          {%- assign socials = "Facebook Twitter Pinterest Instagram Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+ 
+         {%- if  settings.social_twitter_link != blank
+                or settings.social_facebook_link != blank 
+                or settings.social_pinterest_link != blank 
+                or settings.social_instagram_link != blank 
+                or settings.social_tumblr_link != blank
+                or settings.social_snapchat_link != blank
+                or settings.social_youtube_link != blank 
+                or settings.social_vimeo_link != blank 
+                or request.page_type == 'article' 
+                or request.page_type == 'blog' 
+                -%}
+ 
+           {%- assign social_icons = true -%} 
+             <ul class="social_icon"> 
+              {%- for social in socials -%} 
+                {%- assign social_link = social | prepend: 'social_' | append: '_link' | downcase -%}
+                {%- assign icon_link = social | prepend: 'icon-' | downcase -%} 
+                {%- if settings[social_link] != blank -%}
+                  <li class="social-icons__item">
+                    <a class="social-icons__link" href="{{ settings[social_link] | escape }}">
+                      {%- include icon_link -%}
+                      <span class="icon_-text">{{ social }}</span>
+                    </a>
+                  </li>
+               {%- endif -%}
+               {% endfor %}
+          </ul>
+       {%- endif -%} 
       </div>
-    </div>  
+    </div>
+  </div>
   </details>
 </header-drawer>
