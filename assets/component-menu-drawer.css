@@ -82,6 +82,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 100%;
 }
 
+
 .menu-drawer__navigation-container {
   display: grid;
   grid-template-rows: 1fr auto;
@@ -94,6 +95,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 3rem 0;
 }
 
+.menu-drawer__navigation .sideBar_inner {
+  padding-left:20px;
+}
 .menu-drawer__inner-submenu {
   height: 100%;
   overflow-x: hidden;
