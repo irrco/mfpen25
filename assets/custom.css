@@ -303,3 +303,9 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 .search-modal.modal__content .field_label {
     font-size: 1rem;
 }
+
+@media screen and (min-width: 750px) {
+    .header.page-width, .utility-bar__grid.page-width {
+        padding-left: 2px;
+    }
+}
