@@ -299,6 +299,7 @@ h0,h1,h2,h3,h4,h5,h6,h7,
   margin-top:0.25rem !important
 }
 
+.reset__button:not(:focus-visible):not(.focused),
 .search__button {
   margin-top:-7px !important;
 }
@@ -308,6 +309,10 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 
 .field__label {
     font-size: 1rem !important; 
+}
+
+.field__input:focus {
+  padding-top:10px !important;
 }
 
 .field__input:focus~.field__label {
