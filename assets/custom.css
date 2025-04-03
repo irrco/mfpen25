@@ -296,22 +296,22 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 }
 
 .search-modal__form {
-  margin-top:0.5rem !important
+  margin-top:0.25rem !important
 }
 
 .search__button {
-  margin-top:-5px !important;
+  margin-top:-10px !important;
 }
 .predictive-search__results-groups-wrapper {
   flex-direction: column;
 }
 
-.search__input.field__input label.field__label {
+.search__input.field__input {
     font-size: 1rem !important; 
 }
 
 .search__input.field__input {
-      height: 3.5rem !important;
+      height: 2.5rem !important;
 }
 
 @media screen and (min-width: 750px) {
