@@ -301,8 +301,7 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 }
 
 .search-modal.modal__content .field_label {
-    font-size: 1rem !important;
-}
+    font-size: 1rem !important; }
 
 @media screen and (min-width: 750px) {
     .header.page-width, .utility-bar__grid.page-width {
@@ -312,6 +311,13 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 
 .predictive-search {
   border-color:transparent !important;
-  box-shadow: inherit;
-  
-}
+  box-shadow: inherit; }
+
+#product-grid {
+  margin-top:0px !important }
+
+ @media screen and (min-width: 750px) {
+    .section-template--18255421898909__product-grid-padding {
+      padding-top: 6rem !important;
+      padding-bottom: 36px;
+    }
