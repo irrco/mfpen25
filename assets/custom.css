@@ -285,9 +285,12 @@ h0,h1,h2,h3,h4,h5,h6,h7,
     right: 0;
     left: unset;
     align-items: flex-start;
+    margin-top: -1rem;
+    margin-right: -3rem;
 }
 
 .search-modal__content.search-modal__content-bottom {
     align-items: flex-start;
     margin-top: 2vh;
+    padding-right:0;
 }
