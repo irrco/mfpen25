@@ -299,3 +299,7 @@ h0,h1,h2,h3,h4,h5,h6,h7,
 .predictive-search__results-groups-wrapper {
   flex-direction: column;
 }
+
+.search-modal.modal__content .field_label {
+    font-size: 1rem;
+}
