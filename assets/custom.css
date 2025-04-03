@@ -300,8 +300,13 @@ h0,h1,h2,h3,h4,h5,h6,h7,
   flex-direction: column;
 }
 
+.search-modal.modal__content .field_label label {
+    font-size: 1rem !important; 
+}
+
 .search-modal.modal__content .field_label {
-    font-size: 1rem !important; }
+      height: 3.5rem !important;
+}
 
 @media screen and (min-width: 750px) {
     .header.page-width, .utility-bar__grid.page-width {
