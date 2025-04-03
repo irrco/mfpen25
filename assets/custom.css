@@ -58,6 +58,9 @@
       margin:0 !important;
       padding:0 !important;
     }
+  .footer-block__details-content {
+      margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 749px) {
