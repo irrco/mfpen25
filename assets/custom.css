@@ -310,6 +310,10 @@ h0,h1,h2,h3,h4,h5,h6,h7,
     font-size: 1rem !important; 
 }
 
+.field__input:focus~.field__label {
+  display:none !important;
+  height:0px !important;
+}
 .search__input.field__input {
       height: 2.5rem !important;
 }
