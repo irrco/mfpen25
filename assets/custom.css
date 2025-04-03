@@ -278,3 +278,16 @@ h0,h1,h2,h3,h4,h5,h6,h7,
     z-index:2 !important;
   }
 }
+
+.search-modal.modal__content.gradient {
+    height: 100vh;
+    width: 50rem;
+    right: 0;
+    left: unset;
+    align-items: flex-start;
+}
+
+.search-modal__content.search-modal__content-bottom {
+    align-items: flex-start;
+    margin-top: 2vh;
+}
