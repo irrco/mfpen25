@@ -72,6 +72,7 @@
     },
     "custom_liquid_yMLBiJ": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "color_scheme": "",
@@ -84,6 +85,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
+        "autoplayvideo": true,
         "enable_video_looping": true,
         "video": "shopify://files/videos/SS25 runway wide.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
