@@ -138,6 +138,19 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
+        },
+        "complementary_YexLbE": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Styled with",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 3,
+            "products_per_page": 3,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
         }
       },
       "block_order": [
@@ -159,7 +172,8 @@
         "text_eW8ydn",
         "price",
         "variant_picker",
-        "buy_buttons"
+        "buy_buttons",
+        "complementary_YexLbE"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -179,7 +193,6 @@
     },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
