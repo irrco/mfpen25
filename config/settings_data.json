@@ -152,7 +152,7 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "settings": {
-          "enable_recommended": "true"
+          "enable_recommended": "both"
         }
       }
     },
