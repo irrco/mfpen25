@@ -148,6 +148,12 @@
           "link_color": "#000000",
           "link_hover": "#000000"
         }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
+        "settings": {
+          "enable_recommended": "true"
+        }
       }
     },
     "content_for_index": [],
