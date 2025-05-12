@@ -132,13 +132,6 @@
             "swatch_shape": "circle"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
-          }
-        },
         "complementary_YexLbE": {
           "type": "complementary",
           "settings": {
@@ -150,6 +143,13 @@
             "pagination_style": "dots",
             "image_ratio": "square",
             "enable_quick_add": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         }
       },
@@ -172,8 +172,8 @@
         "text_eW8ydn",
         "price",
         "variant_picker",
-        "buy_buttons",
-        "complementary_YexLbE"
+        "complementary_YexLbE",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -193,6 +193,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
