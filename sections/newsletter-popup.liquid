@@ -190,4 +190,10 @@
       const popup = document.getElementById("{{ section.settings.trigger }}");
       popup.style.display = "none";
     });
+    document.document.getElementById("newsletteropen").addEventListener("click", function () {
+      console.log("Close button clicked"); // Debugging step
+      const popup = document.getElementById("{{ section.settings.trigger }}");
+      popup.style.display = "none";
+    });
+  
 {% endjavascript %}
