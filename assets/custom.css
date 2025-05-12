@@ -15,6 +15,7 @@
   justify-content: normal;
   align-items: normal;
   align-content: normal;
+  min-height: calc(100vh - 140px);
 }
 
 .content-group #shopify-section-sidebar {
@@ -47,6 +48,7 @@
   margin-left:var(--page-gutter);
   padding-left:8rem;
   margin-top:6rem;
+  min-height: calc(100vh - 100px);
 }
 }
 
