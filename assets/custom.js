@@ -27,6 +27,18 @@ $(document).ready(function() {
       });
     } else 
     {
+      $('.product-grid-item-slider').each(function(i, obj) {
+          $(obj).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            touchMove:1,
+            swipeToSlide:1,
+            arrows: false,
+            fade: false,
+            speed:300,
+            lazyLoad:'progressive'
+          });
+          console.log('product-grid-item-slider init');      
           $(obj).on('mouseenter', function(event){
             console.log($(this).slick('slickNext'));
              $(this).slick('slickNext');         
@@ -34,7 +46,8 @@ $(document).ready(function() {
           $(obj).on('mouseleave', function(event){
                     console.log('oML');
              $(this).slick('slickPrev');         
-          });        
+          });  
+        });
     }
 
 
