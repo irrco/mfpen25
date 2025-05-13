@@ -58,7 +58,7 @@
           endfor
         -%}
 
-        {%- assign images = page.metafields.custom.season_images.value -%}
+        {%- assign images = page.metafield.custom.season_images.value -%}
         <script>
         console.log('{{ images }}');
         console.log('{{ images.size }}');
