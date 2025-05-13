@@ -756,7 +756,8 @@
 
     // Add to Cart Button (Outside of the loop)
     const addButton = document.createElement('button');
-    addButton.classList.add('addRecommendedProduct');
+    addButton.classList.add('addRecommendedProduct', 'button', 'button--full-width', 'button--primary');
+    
     addButton.dataset.product = JSON.stringify(product);
 
     // Onclick handler
