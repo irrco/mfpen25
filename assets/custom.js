@@ -11,13 +11,13 @@ $(document).ready(function() {
           swipeToSlide:1,
           arrows: false,
           fade: false,
-          speed:300,
+          speed:0,
           lazyLoad:'progressive',
           responsive: [
           {
             breakpoint: 769,
             settings: {
-              speed: 0
+              speed: 300
             }
           }
           // You can unslick at a given breakpoint now by adding:
