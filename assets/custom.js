@@ -23,16 +23,18 @@ $(document).ready(function() {
               $(this).slick('slickPrev')
             }          
           });
-    
+         
+      });
+    } else 
+    {
           $(obj).on('mouseenter', function(event){
             console.log($(this).slick('slickNext'));
-             // $(this).slick('slickNext');         
+             $(this).slick('slickNext');         
           });    
           $(obj).on('mouseleave', function(event){
                     console.log('oML');
-             // $(this).slick('slickPrev');         
-          });       
-      });
+             $(this).slick('slickPrev');         
+          });        
     }
 
 
