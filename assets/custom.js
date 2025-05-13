@@ -1,7 +1,7 @@
 $(document).ready(function() {
  
     let isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
-    if (isMobile) {
+
       
       $('.product-grid-item-slider').each(function(i, obj) {
           $(obj).slick({
@@ -14,34 +14,20 @@ $(document).ready(function() {
             speed:300,
             lazyLoad:'progressive'
           });
-          console.log('product-grid-item-slider init');
-          $(obj).on('swipe', function(event, slick, direction){
-            if (direction == 'left') {
-              $(this).slick('slickNext')
-            }
-            else if (direction == 'right') {
-              $(this).slick('slickPrev')
-            }          
-          });
-         
+    if (isMobile) {
+      console.log('product-grid-item-slider init');
+      $(obj).on('swipe', function(event, slick, direction){
+        if (direction == 'left') {
+          $(this).slick('slickNext')
+        }
+        else if (direction == 'right') {
+          $(this).slick('slickPrev')
+        }          
       });
-    } else 
+    }
+    else 
     {
-      $('.product-grid-item-slider').each(function(i, obj) {
-          $(obj).slick({
-            slidesToShow: 1,
-            slidesToScroll: 0,
-            touchMove:0,
-            swipeToSlide:0,
-            arrows: false,
-            fade: false,
-            speed:300,
-            lazyLoad:'progressive'
-          });
-        
-          console.log('product-grid-item-slider init');
-        
-          $(obj).on('mouseenter', function(event){
+        $(obj).on('mouseenter', function(event){
             console.log($(this).slick('slickNext'));
              $(this).slick('slickNext');         
           });  
@@ -50,9 +36,8 @@ $(document).ready(function() {
                     console.log('oML');
              $(this).slick('slickPrev');         
           }); 
-        
-        });
+         
+      });
     }
-
 
 });
