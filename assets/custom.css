@@ -387,3 +387,11 @@ h0,h1,h2,h3,h4,h5,h6,h7,
   border-radius: 0px !important;
 }
 }
+
+.cc-window {
+  bottom: 100px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
