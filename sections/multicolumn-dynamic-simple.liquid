@@ -58,10 +58,10 @@
           endfor
         -%}
 
-        {%- assign images = product.metafields.custom.season-images.value -%}
-        {%- for season-image in images -%}
+        {%- assign images = product.metafields.custom.seasonimages.value -%}
+        {%- for seasonimage in images -%}
           {%- assign empty_column = '' -%}
-          {%- if season-image == blank
+          {%- if seasonimage == blank
           -%}
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
@@ -76,7 +76,7 @@
             {% endif %}
           >
             <div class="multicolumn-card content-container">
-              {%- if season-image != blank -%}
+              {%- if seasonimage != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
@@ -111,7 +111,7 @@
                     
 
                     {{
-                      season-image
+                      seasonimage
                       | image_url: width: 3200
                       | image_tag:
                         widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
