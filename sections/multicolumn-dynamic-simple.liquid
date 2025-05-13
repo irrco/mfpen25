@@ -59,6 +59,11 @@
         -%}
 
         {%- assign images = product.metafields.custom.seasonimages.value -%}
+        <script>
+        console.log('{{ images }}');
+        console.log('{{ images.size }}');
+        
+        </script>
         {%- for seasonimage in images -%}
           {%- assign empty_column = '' -%}
           {%- if seasonimage == blank
