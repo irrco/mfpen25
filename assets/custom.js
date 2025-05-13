@@ -11,8 +11,19 @@ $(document).ready(function() {
           swipeToSlide:1,
           arrows: false,
           fade: false,
-          speed:0,
-          lazyLoad:'progressive'
+          speed:300,
+          lazyLoad:'progressive',
+          responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              speed: 0
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
         });
     if (isMobile) {
       console.log('product-grid-item-slider init');
