@@ -11,7 +11,7 @@ $(document).ready(function() {
           swipeToSlide:1,
           arrows: false,
           fade: false,
-          speed:300,
+          speed:0,
           lazyLoad:'progressive'
         });
     if (isMobile) {
