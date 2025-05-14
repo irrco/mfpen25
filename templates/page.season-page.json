@@ -20,6 +20,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 16,
         "padding_bottom": 0
