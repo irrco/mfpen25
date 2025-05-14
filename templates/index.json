@@ -98,6 +98,7 @@
     },
     "newsletter_popup_39yJwD": {
       "type": "newsletter-popup",
+      "disabled": true,
       "settings": {
         "trigger": "newsletteropen",
         "title": "",

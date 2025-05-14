@@ -37,15 +37,26 @@
         "enable_language_selector": true,
         "enable_login-icon": false,
         "enable_customer_avatar": false,
+        "enable_cart-icon": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "newsletter_popup_QAtAYF": {
+      "type": "newsletter-popup",
+      "name": "Newsletter Popup",
+      "settings": {
+        "trigger": "newsletteropen",
+        "title": "",
+        "content": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "newsletter_popup_QAtAYF"
   ]
 }
