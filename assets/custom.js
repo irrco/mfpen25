@@ -15,7 +15,7 @@ $(document).ready(function() {
           lazyLoad:'progressive',
           responsive: [
           {
-            breakpoint: 769,
+            breakpoint: 750,
             settings: {
               speed: 300
             }
